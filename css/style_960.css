@@ -1,0 +1,43 @@
+
+body, form, input, select, textarea, button { font-size:14px; line-height:18px; }
+
+.wrap {position:relative; margin:0 auto; width:1170px;}
+
+/* layout -----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Top */
+#wrapTop {height:82px; border-bottom:2px solid #ff971c; }
+#wrapTop h1 {left:0; top:20px; width:110px; height:41px; background:url('/img/common/logo.png') no-repeat;}
+#wrapTop .menuBox {top:33px; right:0;}
+#wrapTop .menuBox > ul {}
+#wrapTop .menuBox > ul > li {}
+#wrapTop .menuBox > ul > li a {padding:0 25px; font-size:15px;}
+#wrapTop .menuBox > ul > li .depth2 {display:none;}
+#wrapTop .utilityBox {display:none;}
+
+
+/* Footer */
+
+
+/* Body */
+#wrapCont {margin-top:83px;}
+#wrapCont .cont {margin-top:55px;}
+#wrapCont .visualBox {margin-top:139px;}
+#wrapCont .main_util {float:right; width:370px; box-sizing:border-box;}
+#wrapCont .main_util:after {display:block; content:''; clear:both;}
+#wrapCont .main_util .top_menu {}
+#wrapCont .main_util .top_menu .col_2 {}
+#wrapCont .main_util .top_menu .col_2 li {height:168px; text-align:center;}
+#wrapCont .notice_box {margin-top:31px; padding:20px;}
+#wrapCont .notice_box .btn_more {top:20px; right:20px;}
+
+/* common --------------------------------------------------------------------------------------------------------------------------------------------*/
+#maskPC { z-index:10; background-color:#232927; opacity:.6; }
+
+/* 이미지형 아이콘 */
+a.btn_ico, button.btn_ico, span.btn_ico {background-image:url('/img/common/sp_icon.png'); background-repeat:no-repeat;}
+.btn_ico.exper {margin-right:7px; width:60px; height:59px; background-position:0 0;}
+.btn_ico.program {margin-right:7px; width:52px; height:59px; background-position:0 0;}
+.btn_ico.reserve {margin-right:7px; width:67px; height:59px; background-position:0 0;}
+.btn_ico.info {margin-right:7px; width:60px; height:59px; background-position:0 0;}
+
+

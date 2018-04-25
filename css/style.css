@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+/* -----------------------------------------------
+   Cascading Style Sheets
+--------------------------------------------------*/
+
+@import url("/css/layout.css");
+@import url("/css/font.css");
+@import url("/css/style_320.css") screen and (max-width:960px);
+@import url("/css/style_960.css") screen and (min-width:961px);
