@@ -31,7 +31,7 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapTop {position:fixed; top:0; width:100%; background:#fff; z-index:10;}
 #wrapTop h1 {position:absolute; text-indent:-999em;}
 #wrapTop h1 a {display:block; height:100%;}
-#wrapTop .menuBox {position:absolute; font-family:'NanumSquareRoundB';}
+#wrapTop .menuBox {position:absolute; font-family:'NanumSquare', sans-serif; font-weight:bold;}
 #wrapTop .menuBox > ul {text-align:right;}
 #wrapTop .menuBox > ul > li {display:inline-block;}
 #wrapTop .menuBox > ul > li a {display:block; padding:0 25px;}
@@ -42,15 +42,28 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 
 /* Body */
 #wrapCont {}
+#wrapCont .sec_tit {font-family:'NanumSquare', sans-serif; font-weight:bold;}
 #wrapCont .visualBox {overflow:hidden;}
 #wrapCont .main_slide {float:left;}
 #wrapCont .main_util {}
 #wrapCont .main_util .top_menu {}
-#wrapCont .main_util .top_menu .col_2 {overflow:hidden; border:1px solid #dedede; border-top:1px solid #ff971c; border-bottom:0;}
-#wrapCont .main_util .top_menu .col_2 li {float:left; width:calc(50% - 1px); box-sizing:border-box;}
-#wrapCont .main_util .top_menu .col_2 li:hover {background:#fb9e24;}
+#wrapCont .main_util .top_menu .col_2 {overflow:hidden; border:1px solid #dedede; border-top:1px solid #ff971c; border-left:0 none; border-bottom:0;}
+#wrapCont .main_util .top_menu .col_2 li {float:left; width:50%; border:solid #dedede; border-width:0 0 1px 1px; box-sizing:border-box;}
+#wrapCont .main_util .top_menu .col_2 li:hover {background:#fb9e24; box-shadow: 2px 2px 6px #d4d4d4}
+#wrapCont .main_util .top_menu .col_2 li:hover  p {color:#fff;}
 #wrapCont .notice_box {position:relative; box-sizing:border-box; border:1px solid #dedede; border-top:1px solid #ff971c; background:#f9f9f9;}
-#wrapCont .notice_box .btn_more {position:absolute;}
+#wrapCont .notice_box .bullet01 {}
+#wrapCont .notice_box .bullet01 li {padding-left:15px; margin-top:5px; background:url('/img/common/bullet01.png') no-repeat left center;}
+#wrapCont .notice_box .bullet01 li a {font-size:15px; color:#222;}
+#wrapCont .notice_box .noice_more {position:absolute;}
+#wrapCont .movie_preview {}
+#wrapCont .movie_preview ul {overflow:hidden; margin:0 -15px;}
+#wrapCont .movie_preview ul > li {float:left; margin:0 15px; width:270px;}
+#wrapCont .movie_preview ul > li .thumb {}
+#wrapCont .movie_preview ul > li .txt_box {font-family:'NanumSquare', sans-serif; }
+#wrapCont .movie_preview ul > li .txt_box > strong {}
+#wrapCont .movie_preview ul > li .txt_box .count {display:inline-block; color:#999;}
+#wrapCont .contBox2 {}
 #wrapCont {}
 
 /* common --------------------------------------------------------------------------------------------------------------------------------------------*/

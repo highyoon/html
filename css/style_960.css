@@ -21,23 +21,36 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 /* Body */
 #wrapCont {margin-top:83px;}
 #wrapCont .cont {margin-top:55px;}
+#wrapCont .sec_tit {margin-bottom:22px; font-size:22px;}
 #wrapCont .visualBox {margin-top:139px;}
 #wrapCont .main_util {float:right; width:370px; box-sizing:border-box;}
 #wrapCont .main_util:after {display:block; content:''; clear:both;}
 #wrapCont .main_util .top_menu {}
 #wrapCont .main_util .top_menu .col_2 {}
-#wrapCont .main_util .top_menu .col_2 li {height:168px; text-align:center;}
+#wrapCont .main_util .top_menu .col_2 li {padding:30px 0; height:168px; text-align:center;}
+#wrapCont .main_util .top_menu .col_2 li  a > p {margin-top:25px; font-size:17px; color:#222;}
 #wrapCont .notice_box {margin-top:31px; padding:20px;}
-#wrapCont .notice_box .btn_more {top:20px; right:20px;}
+#wrapCont .notice_box .bullet01 li {padding-left:15px; margin-top:11px; background:url('/img/common/bullet01.png') no-repeat left center;}
+#wrapCont .notice_box .bullet01 li a {font-size:15px; color:#222;}
+#wrapCont .notice_box .noice_more {top:20px; right:20px;}
+
+#wrapCont .movie_preview ul > li .thumb {margin-bottom:15px;}
+#wrapCont .movie_preview ul > li .txt_box {line-height:1.4;}
+#wrapCont .movie_preview ul > li .txt_box > strong {font-size:17px;}
+#wrapCont .movie_preview ul > li .txt_box .count {margin-top:10px; font-size:14px;}
+
+#wrapCont .contBox2 {background:#999;}
 
 /* common --------------------------------------------------------------------------------------------------------------------------------------------*/
 #maskPC { z-index:10; background-color:#232927; opacity:.6; }
 
 /* 이미지형 아이콘 */
 a.btn_ico, button.btn_ico, span.btn_ico {background-image:url('/img/common/sp_icon.png'); background-repeat:no-repeat;}
-.btn_ico.exper {margin-right:7px; width:60px; height:59px; background-position:0 0;}
-.btn_ico.program {margin-right:7px; width:52px; height:59px; background-position:0 0;}
-.btn_ico.reserve {margin-right:7px; width:67px; height:59px; background-position:0 0;}
-.btn_ico.info {margin-right:7px; width:60px; height:59px; background-position:0 0;}
+.btn_ico.exper {width:60px; height:59px; background-position:0 0;}
+.btn_ico.program {width:52px; height:59px; background-position:-67px 0;}
+.btn_ico.reserve {width:67px; height:59px; background-position:-128px 0;}
+.btn_ico.info {width:60px; height:59px; background-position:-200px 0;}
+.btn_ico.more {width:23px; height:23px; background-position:0 -59px;}
+.btn_ico.m_count {margin-right:7px; width:8px; height:12px; background-position:-23px -59px;}
 
 

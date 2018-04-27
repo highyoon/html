@@ -10,11 +10,17 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 
 /* body */
 #wrapCont {}
+#wrapCont .sec_tit {}
 #wrapCont .main_util {}
 #wrapCont .main_util .top_menu {}
 #wrapCont .main_util .top_menu .col_2 {}
 #wrapCont .main_util .top_menu .col_2 li {}
 #wrapCont .main_util {}
+
+#wrapCont .movie_preview ul > li .thumb {}
+#wrapCont .movie_preview ul > li .txt_box {}
+#wrapCont .movie_preview ul > li .txt_box > strong {}
+#wrapCont .movie_preview ul > li .txt_box .count {}
 
 /* Footer */
 
