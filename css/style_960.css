@@ -22,13 +22,31 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont {margin-top:83px;}
 #wrapCont .cont {margin-top:55px;}
 #wrapCont .sec_tit {margin-bottom:22px; font-size:22px;}
-#wrapCont .visualBox {margin-top:139px;}
+#wrapCont .visualBox {}
 #wrapCont .main_util {float:right; width:370px; box-sizing:border-box;}
 #wrapCont .main_util:after {display:block; content:''; clear:both;}
 #wrapCont .main_util .top_menu {}
 #wrapCont .main_util .top_menu .col_2 {}
 #wrapCont .main_util .top_menu .col_2 li {padding:30px 0; height:168px; text-align:center;}
 #wrapCont .main_util .top_menu .col_2 li  a > p {margin-top:25px; font-size:17px; color:#222;}
+
+#wrapCont .main_slide {width:770px;}
+
+#wrapCont .main_slide .bx-wrapper {position:relative;}
+#wrapCont .main_slide .bx-wrapper .bx-pager {position:absolute;width:100%;bottom:30px;text-align: center;}
+#wrapCont .main_slide .bx-wrapper .bx-pager.bx-default-pager a {
+  background:url('/img/common/pager.png') no-repeat bottom center; text-indent:-9999px; display:block; width:9px; height:9px; margin:0 5px; outline:0;}
+#wrapCont .main_slide .bx-wrapper .bx-pager.bx-default-pager a:hover,
+#wrapCont .main_slide .bx-wrapper .bx-pager.bx-default-pager a.active,
+#wrapCont .main_slide .bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background:url('/img/common/pager.png') no-repeat top center;
+}
+#wrapCont .main_slide .bx-wrapper .bx-pager-item,
+#wrapCont .main_slide .bx-wrapper .bx-controls-auto .bx-controls-auto-item {display:inline-block; vertical-align:bottom; *zoom:1; *display: inline;}
+#wrapCont .main_slide .bx-wrapper .bx-pager-item {font-size:0; line-height:0;}
+
+
+
 #wrapCont .notice_box {margin-top:31px; padding:20px;}
 #wrapCont .notice_box .bullet01 li {padding-left:15px; margin-top:11px; background:url('/img/common/bullet01.png') no-repeat left center;}
 #wrapCont .notice_box .bullet01 li a {font-size:15px; color:#222;}
@@ -39,18 +57,79 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .movie_preview ul > li .txt_box > strong {font-size:17px;}
 #wrapCont .movie_preview ul > li .txt_box .count {margin-top:10px; font-size:14px;}
 
-#wrapCont .contBox2 {background:#999;}
+#wrapCont .contBox2 {background:#f9f9f9;}
+#wrapCont .contBox2 .why_box {top:0; left:-30px; padding:25px 30px; width:330px; height:237px; text-align:left; background:#fff;}
+#wrapCont .contBox2 .why_box .btn_box {margin-top:55px; text-align:left;}
+#wrapCont .contBox2 ul {padding:50px 0; padding-left:330px; height:237px;}
+#wrapCont .contBox2 ul li {}
+#wrapCont .contBox2 ul li > div {}
+#wrapCont .contBox2 ul li > div > span {font-size:60px; font-weight:bold;}
+#wrapCont .contBox2 ul li > div > span i {font-size:14px;}
+#wrapCont .contBox2 ul li .green {}
+#wrapCont .contBox2 ul li .orange {}
+#wrapCont .contBox2 ul li .sky {}
+#wrapCont .contBox2 ul li > div > .bg_tuv {margin:0 auto 7px; width:110px; height:50px; background-position:top center;}
+#wrapCont .contBox2 ul li > p {margin-top:15px;}
+
+#wrapCont .contBox3 {}
+#wrapCont .contBox3 .bx_exper {margin:0 -15px;}
+#wrapCont .contBox3 .bx_exper > div { margin:0 15px; width:calc(33% - 28px); border:1px solid #dedede;}
+#wrapCont .contBox3 .bx_exper > div > h3 {padding:13px 0; font-size:17px;}
+#wrapCont .contBox3 .bx_exper > div > ul {padding:10px 30px 10px;}
+#wrapCont .contBox3 .bx_exper > div > ul li {padding:20px 0; min-height:115px; border-bottom:1px solid #dedede;}
+#wrapCont .contBox3 .bx_exper > div > ul li a {padding-left:100px;}
+#wrapCont .contBox3 .bx_exper .exper_tit {margin-bottom:7px; font-weight:bold;}
+#wrapCont .contBox3 .bx_exper p {letter-spacing:-1px;}
+#wrapCont .contBox3 .bx_exper .thumb {top:0; left:0;}
+
+#wrapCont .contBox4 {padding:40px 0 55px;}
+#wrapCont .contBox4 p {font-size:15px;}
+#wrapCont .contBox4 .sub_txt {margin-top:10px;}
+#wrapCont .contBox4 .reserve_box {margin:40px -15px 0;}
+#wrapCont .contBox4 .reserve_box .col_4 {margin:0 15px; width:calc(25% -  30px)}
+#wrapCont .contBox4 .reserve_box .tit {padding-left:15px; line-height:1; font-size:22px; }
+#wrapCont .contBox4 .reserve_box .tit:after {top:0; left:0; width:2px; height:21px; background:#fcac3a;}
+#wrapCont .contBox4 .reserve_box .thumb {margin-top:25px;}
+#wrapCont .contBox4 .btn_box {position:absolute; top:10px; right:0;}
+
+#wrapFooter {margin-top:55px;}
+#wrapFooter .copyright {height:55px; line-height:55px; font-size:14px;}
+
+/* table */
+.mBoard {}
+.mBoard table {}
+.mBoard th {padding:15px 0;}
+.mBoard td {padding:15px 15px;}
+.mBoard .last {border-right:0 none;}
+
 
 /* common --------------------------------------------------------------------------------------------------------------------------------------------*/
 #maskPC { z-index:10; background-color:#232927; opacity:.6; }
+.scroll_navi {top:50%; left:50%; margin:-162px 0 0 646px; z-index:11;}
+.scroll_navi ul {}
+.scroll_navi ul li {margin-bottom:30px;}
+.scroll_navi ul li a {}
+.scroll_navi ul li .navi_ico {margin-bottom:10px; width:60px; height:60px;}
+.scroll_navi ul li.nav_02 .navi_ico {background-position:0 -60px;}
+.scroll_navi ul li.nav_03 .navi_ico {background-position:0 -120px;}
+.scroll_navi ul li .tooltip {top:0; left:-125px; width:142px; height:45px; line-height:40px;}
+.scroll_navi ul li.nav_02 .tooltip {background-position:0 -45px;}
+.scroll_navi ul li.nav_03 .tooltip {background-position:0 -90px;}
+.scroll_navi ul li:hover .tooltip {display:block;}
+
+/* button */
+.btn_box {}
+.btn_box .view {padding:10px 25px;}
+.btn_box .view > span {padding-right:20px; font-size:15px; background-position:center right;}
 
 /* 이미지형 아이콘 */
 a.btn_ico, button.btn_ico, span.btn_ico {background-image:url('/img/common/sp_icon.png'); background-repeat:no-repeat;}
 .btn_ico.exper {width:60px; height:59px; background-position:0 0;}
 .btn_ico.program {width:52px; height:59px; background-position:-67px 0;}
-.btn_ico.reserve {width:67px; height:59px; background-position:-128px 0;}
+.btn_ico.reserve {width:67px; height:60px; background-position:-128px 0;}
 .btn_ico.info {width:60px; height:59px; background-position:-200px 0;}
 .btn_ico.more {width:23px; height:23px; background-position:0 -59px;}
 .btn_ico.m_count {margin-right:7px; width:8px; height:12px; background-position:-23px -59px;}
+.btn_ico.noti {margin-top:-2px; margin-right:2px; width:15px; height:15px; background-position:-34px -61px;}
 
 

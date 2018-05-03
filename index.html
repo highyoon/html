@@ -2,6 +2,7 @@
 <html lang="kr">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
 <title>에버랜드 학생단체</title>
 <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -88,11 +89,19 @@
 			</ul>
 		</nav>
 		<!-- [e]topmenu -->
-
+		<div class="scroll_navi">
+			<ul>
+				<li class="nav_01 on"><a href="#none" data-idx="1"><span class="navi_ico"></span>예약하기<div class="tooltip">바로예약해 보세요!</div></a></li>
+				<li class="nav_02"><a href="#none" data-idx="2"><span class="navi_ico"></span>담당자 안내<div class="tooltip">빠르게 안내할게요!</div></a></li>
+				<li class="nav_03"><a href="#none" data-idx="3"><span class="navi_ico"></span>FAQ<div class="tooltip">언제든 질문하세요!</div></a></li>
+			</ul>
+		</div>
 		<div class="utilityBox">
 			<a href="#totalMenu" class="btnMenu">Total Menu</a>
 			<!-- [s]total link-->
 			<nav id="totalMenu">
+				<div class="logo"><a href="#none">에버에듀스쿨</a></div>
+				<a href="#none" class="btnClose">닫기</a>
 				<ul class="menu">
 					<li><a>WHY에버랜드</a></li>
 					<li><a>체험학습 프로그램</a>
@@ -109,13 +118,6 @@
 					<li><a href="/about/who_mission.htm">행사관련 서류</a></li>
 				</ul>
 
-				<ul class="link">
-					<li class="hide"><a>Blood Derivatives</a></li>
-					<li class="hide"><a>Affiliated Companies</a></li>
-					<li><a>Media</a></li>
-					<li><a>Careers</a></li>
-					<li><a>Contact  Us</a></li>
-				</ul>
 			</nav>
 			<!-- [s]total link -->
 		</div>
@@ -132,6 +134,8 @@
 			<div class="main_slide">
 				<ul class="main_bx">
 					<li><a href=""><img src="/img/common/main_slide01.jpg" alt="설민석-궁궐은 살아있다."></a></li>
+					<li><a href=""><img src="/img/common/main_slide01.jpg" alt="설민석-궁궐은 살아있다."></a></li>
+					<li><a href=""><img src="/img/common/main_slide01.jpg" alt="설민석-궁궐은 살아있다."></a></li>
 				</ul>
 			</div>
 			<div class="main_util">
@@ -140,25 +144,25 @@
 						<li>
 							<a href="#none">
 								<span class="btn_ico exper"></span>
-								<p>숙박형 체험(수학여행)</p>
+								<p>숙박형 체험<span>(수학여행)</span></p>
 							</a>
 						</li>
 						<li>
 							<a href="#none">
 								<span class="btn_ico program"></span>
-								<p>체험학습 프로그램</p>
+								<p>체험학습 <span>프로그램</span></p>
 							</a>
 						</li>
 						<li>
 							<a href="#none">
 								<span class="btn_ico reserve"></span>
-								<p>에듀스쿨 예약하기</p>
+								<p>에듀스쿨 <span>예약하기</span></p>
 							</a>
 						</li>
 						<li>
 							<a href="#none">
 								<span class="btn_ico info"></span>
-								<p>담당자 안내</p>
+								<p>담당자 <span>안내</span></p>
 							</a>
 						</li>
 					</ul>
@@ -233,24 +237,27 @@
 	<!-- [s]WHY 에버랜드 -->
 	<article class="contBox2 cont">
 		<div class="wrap">
-			div.
-			<h3 class="sec_tit">WHY 에버랜드</h3>
-			<p>대한민국의 유일한 진짜 배움터, 에버랜드로 와야하는 3가지 이유</p>
-		
-		<ul>
-			<li>
-				<div><span></span></div>
-				<p>선생님과 학생들이 96% 만족한 체험프로그램</p>
-			</li>
-			<li>
-				<div></div>
-				<p>현업 전문가에게 배우는 고품격 Real 직업체험</p>
-			</li>
-			<li>
-				<div></div>
-				<p>국가공인 인증프로그램 (여성가족부/교육부/TUV인증)</p>
-			</li>
-		</ul>
+			<div class="why_box">
+				<h3 class="sec_tit">WHY 에버랜드</h3>
+				<p>대한민국의 유일한 진짜 배움터,<br>에버랜드로 와야하는 3가지 이유</p>
+				<div class="btn_box">
+					<a href="#none" class="view"><span>자세히 보기</span></a>
+				</div>
+			</div>
+			<ul class="bx_why">
+				<li>
+					<div class="green"><span class="">96<i>%</i></span>체험학습 만족</div>
+					<p>선생님과 학생들이 96%<br>만족한 체험프로그램</p>
+				</li>
+				<li>
+					<div class="orange"><span class="">24<i>개</i></span>체험학습 프로그램</div>
+					<p>현업 전문가에게 배우는<br>고품격 Real 직업체험</p>
+				</li>
+				<li>
+					<div class="sky"><span class="bg_tuv"></span>안전인증기관 TUV</div>
+					<p>국가공인 인증프로그램<br>(여성가족부/교육부/TUV인증)</p>
+				</li>
+			</ul>
 		</div>
 	</article>
 	<!-- [e]WHY 에버랜드 -->
@@ -258,139 +265,139 @@
 
 	<!-- [s]체험학습 프로그램 -->
 	<article class="contBox3 cont">
-		<div class="exper">
-			<h3>직업체험</h3>
-			<ul>
-				<li>
-					<a href="">
-						<div class="thumb"></div>
-						<p>미래직업체험관(PLAB)</p>
-						<p>미리보는 4차 산업혁명 미래직업 체험관(PLAY-LAB)</p>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<div class="thumb"></div>
-						<p>사육사</p>
-						<p>사육사를 직접 만나 업무와 보람등 직업에 대한 자세한 이야기를</p>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="exper">
-			<h3>안전체험</h3>
-			<ul>
-				<li>
-					<a href="">
-						<div class="thumb"></div>
-						<p>안전체험관</p>
-						<p>지진,화재, 응급상황 등 실제와 같이 생생한 재난 현장을 체험합니다.</p>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<div class="thumb"></div>
-						<p>수상안전체험</p>
-						<p>다양한 수상 안전 수칙과 인명 구조 방법을 실습해보는 프로그램 입니다.</p>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="exper">
-			<h3>감성체험</h3>
-			<ul>
-				<li>
-					<a href="">
-						<div class="thumb"></div>
-						<p>동문아카데미 (판다)</p>
-						<p>멸종위기 판다의 생태 습성을 탐구 해보는 프로그램 입니다.</p>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<div class="thumb"></div>
-						<p>동물아카데미 (몽키)</p>
-						<p>전문가의 안내와 함께 먹이 체험을 통해 교감하는 프로그램입니다.</p>
-					</a>
-				</li>
-			</ul>
+		<div class="wrap">
+			<h3 class="sec_tit">체험학습 프로그램</h3>
+			<div class="bx_exper">
+				<div class="exper">
+					<h3 class="orange">직업체험</h3>
+					<ul>
+						<li>
+							<a href="#none">
+								<div class="thumb"><img src="/img/exper01.jpg" alt="체험학습 예시1"></div>
+								<p class="exper_tit">미래직업체험관(PLAB)</p>
+								<p>미리보는 4차 산업혁명 미래직업 체험관(PLAY-LAB)</p>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="thumb"><img src="/img/exper02.jpg" alt="체험학습 예시1"></div>
+								<p class="exper_tit">사육사</p>
+								<p>사육사를 직접 만나 업무와 보람등 직업에 대한 자세한 이야기를</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="exper">
+					<h3 class="green">안전체험</h3>
+					<ul>
+						<li>
+							<a href="#none">
+								<div class="thumb"><img src="/img/exper03.jpg" alt="체험학습 예시1"></div>
+								<p class="exper_tit">안전체험관</p>
+								<p>지진,화재, 응급상황 등 실제와 같이 생생한 재난 현장을 체험합니다.</p>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="thumb"><img src="/img/exper01.jpg" alt="체험학습 예시1"></div>
+								<p class="exper_tit">수상안전체험</p>
+								<p>다양한 수상 안전 수칙과 인명 구조 방법을 실습해보는 프로그램 입니다.</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="exper">
+					<h3 class="sky">감성체험</h3>
+					<ul>
+						<li>
+							<a href="">
+								<div class="thumb"><img src="/img/exper02.jpg" alt="체험학습 예시1"></div>
+								<p class="exper_tit">동물아카데미 (판다)</p>
+								<p>멸종위기 판다의 생태 습성을 탐구 해보는 프로그램 입니다.</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="thumb"><img src="/img/exper03.jpg" alt="체험학습 예시1"></div>
+								<p class="exper_tit">동물아카데미 (몽키)</p>
+								<p>전문가의 안내와 함께 먹이 체험을 통해 교감하는 프로그램입니다.</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</article>
 	<!-- [e]체험학습 프로그램 -->
-	<article>
+
+	<!-- [s]예약신청 -->
+	<article class="contBox4 cont">
 		<div class="wrap">
-			<div class="grid col-2">
-				<h3 class="sec_tit">예약신청</h3>
-				<div class="mBoard">
-					<table>
-						<caption></caption>
-						<colgroup>
-							<col width="" />
-							<col width="auto" />
-						</colgroup>
-						<tbody>
-							<tr>
-								<th scope="row">행사유형</th>
-								<td></td>
-							</tr>
-							<tr>
-								<th scope="row">지역</th>
-								<td></td>
-							</tr>
-							<tr>
-								<th scope="row">학교명</th>
-								<td></td>
-							</tr>
-							<tr>
-								<th scope="row">연락처</th>
-								<td></td>
-							</tr>
-							<tr>
-								<th scope="row">성함</th>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-					<div class="agree_box">
-						<div class=""><pre></pre></div>
-						<div class="btn"><a href="#none">예약 신청하기</a></div>
-					</div>
-					
-				</div>
-				
+			<h3 class="sec_tit">예약신청</h3>
+			<p>편리하고 부담없는 예약 상담 신청! 방문 일정과 예산을 미리 계획하고, 결제는 나중에!</p>
+			<p class="sub_txt"><span class="btn_ico noti"></span> 단체 식사 / 단체 식권 추가 가능</p>
+			<div class="btn_box">
+				<a href="#none" class="view"><span>바로가기</span></a>
 			</div>
-			<div class="grid col-1">
-				<h3>지역별 문의 및 예약 전화</h3>
-				<div>
-					<dl>
-						<dt>서울</dt>
-						<dd>02) 759-1951 02) 759-1954</dd>
-					</dl>
-					<dl>
-						<dt>경기남부/강원</dt>
-						<dd>031) 320-8610~7</dd>
-					</dl>
-					<dl>
-						<dt>경기북부/인천/김포/부천/광명/시흥</dt>
-						<dd>02) 759-1950</dd>
-					</dl>
-					<dl>
-						<dt>대전/세종/충청</dt>
-						<dd>042) 532-8161</dd>
-					</dl>
-					<dl>
-						<dt>광주/전남/전북</dt>
-						<dd>063) 285-7380 042) 525-7380</dd>
-					</dl>
-					<dl>
-						<dt>대구/경북</dt>
-						<dd>053) 561-4688</dd>
-					</dl>
-					<dl>
-						<dt>부산/경남/울산/제주</dt>
-						<dd>051) 462-5627</dd>
-					</dl>
+			<div class="reserve_box">
+				<div class="col_4">
+					<h4 class="tit">에버랜드</h4>
+					<div class="thumb"><img src="/img/reserve01.jpg" alt="에버랜드"></div>
 				</div>
+				<div class="col_4">
+					<h4 class="tit">에버랜드+체험프로그램</h4>
+					<div class="thumb"><img src="/img/reserve02.jpg" alt="에버랜드"></div>
+				</div>
+				<div class="col_4">
+					<h4 class="tit">캐리비안 베이</h4>
+					<div class="thumb"><img src="/img/reserve03.jpg" alt="에버랜드"></div>
+				</div>
+				<div class="col_4">
+					<h4 class="tit">캐리비안 베이<span>+체험프로그램</span></h4>
+					<div class="thumb"><img src="/img/reserve04.jpg" alt="에버랜드"></div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<!-- [e]예약신청 -->
+
+	<article class="contBox5 cont">
+		<div class="wrap">
+			<h3 class="sec_tit">지역별 문의 및 예약 전화</h3>
+			<div class="mBoard">
+				<table class="rwd-table">
+					<caption>지역별 당담 전화번호표</caption>
+					<colgroup>
+						<col width="12.5%">
+						<col width="12.5%">
+						<col width="12.5%">
+						<col width="12.5%">
+						<col width="12.5%">
+						<col width="12.5%">
+						<col width="12.5%">
+						<col width="12.5%">
+					</colgroup>
+				  <tr>
+					<th>서울지역</th>
+					<th>경기남부/강원</th>
+					<th>경기북부/인천/<br>김포/부천/광명/시흥</th>
+					<th>대전/세종/충청</th>
+					<th>광주/전남/전북</th>
+					<th>대구/경북</th>
+					<th>부산/경남/울산/제주</th>
+					<th class="last">대표번호</th>
+				  </tr>
+				  <tr>
+					<td data-th="서울지역">02) 759-1951<br>02) 759-1954</td>
+					<td data-th="경기남부/강원">031) 320-8610~7</td>
+					<td data-th="경기북부/인천/김포/부천/광명/시흥">02) 759-1950</td>
+					<td data-th="대전/세종/충청">042) 532-8161</td>
+					<td data-th="광주/전남/전북">063) 285-7380<br>042) 525-7380</td>
+					<td data-th="대구/경북">053) 561-4688</td>
+					<td data-th="부산/경남/울산/제주">051) 462-5627</td>
+					<td class="last" data-th="대표번호">031) 320-5000</td>
+				  </tr>
+				</table>
 			</div>
 		</div>
 	</article>
@@ -398,16 +405,9 @@
 <!-- [e]Content area -->
 
 <div class="btnTop"><a href="#wrapTop"></a></div>
-<div class="scroll_navi">
-	<ul>
-		<li class="nav_01 on"><a href="#none" data-idx="1"><span class="btn_ico"></span>예약하기<div class="tultip">바로예약해 보세요!</div></a></li>
-		<li class="nav_02"><a href="#none" data-idx="2"><span class="btn_ico"></span></span>담당자 안내<div class="tultip">빠르게 안내할게요!</div></a></li>
-		<li class="nav_03"><a href="#none" data-idx="3"><span class="btn_ico"></span></span>FAQ<div class="tultip">언제든 질문하세요!</div></a></li>
-	</ul>
-</div>
 <!-- [s]include : Footer -->
 <footer id="wrapFooter">
-	<small class="copyright">CopyrightⓒEverland Resort</small>
+	<small class="copyright">COPYRIGHT ⓒ Samsung C&T Coporation. All rights reserved.</small>
 </footer>
 <!-- [e]include : Footer -->
 

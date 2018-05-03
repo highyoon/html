@@ -13,6 +13,12 @@ $(document).ready(function(){
 			
 		}
 	});
+
+	//  main rolling banner
+	$('.main_bx').bxSlider({
+			pager: true,
+			controls:false
+		});
 	// menuBox inner rolling 
 	/*function box_roll(){
 		$('.menuBox .slide_box').bxSlider({
@@ -33,6 +39,16 @@ $(document).ready(function(){
 		});
 	}
 	box_roll();*/
+
+	if( winWidth>checkWidth ){
+		} else {
+			$('.bullet01').bxSlider({
+				mode: 'vertical',
+				auto: true,
+				pager: false,
+				controls:false
+			});
+		}
 	
 	//topSearch
 	$('#wrapTop .btnSearch').click(function(){
@@ -151,7 +167,6 @@ $(document).ready(function(){
 		$(".slideBox>li").eq(n).fadeIn(1000).siblings().fadeOut(1000);
 		$(".location>li").eq(n).delay(100).addClass("active").siblings().removeClass("active");
 	}
-	console.log(m);
 
 	//product rolling 
 	if ($('body').hasClass('main'))
