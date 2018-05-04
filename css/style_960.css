@@ -19,10 +19,30 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 
 
 /* Body */
-#wrapCont {margin-top:83px;}
+#wrapCont {}
+#wrapCont .status {}
+
+#wrapCont .status {height:50px;}
+#wrapCont .status .wrap > ul {height:50px;}
+#wrapCont .status .wrap > ul > li {height:50px; font-size:15px;}
+
+#wrapCont .status .wrap > ul > li a {font-size:15px;}
+#wrapCont .status .home a { width:49px; background:url('/img/common/icon_home.png') center center no-repeat; background-size:15px 14px; font-size:0; line-height:0; text-indent:-9999px; }
+#wrapCont .status .depth.first { padding:19px 30px 0 30px; }
+#wrapCont .status .depth.second { margin-right:-1px; }
+#wrapCont .status .depth.third { margin-right:-1px; }
+#wrapCont .status .submenu {height:50px; background-image:url('/img/common/bullet_status.png'); background-position:90% 23px; padding-top:50px;}
+#wrapCont .status .submenu.active, #wrapCont .status .submenu.active a {z-index:10;}
+#wrapCont .status .submenu li { height:50px;}
+#wrapCont .status .submenu li a { padding:19px 60px 0 30px; }
+#wrapCont .status .submenu li a:hover {text-decoration:underline;}
+#wrapCont .status .submenu li.now a, #wrapCont .status .submenu li.now a:hover {background:none;}
+#wrapCont .status .submenu li.now {top:0; left:0; width:100%; height:51px;}
+
+
 #wrapCont .cont {margin-top:55px;}
 #wrapCont .sec_tit {margin-bottom:22px; font-size:22px;}
-#wrapCont .visualBox {}
+#wrapCont .visualBox {margin-top:83px;}
 #wrapCont .main_util {float:right; width:370px; box-sizing:border-box;}
 #wrapCont .main_util:after {display:block; content:''; clear:both;}
 #wrapCont .main_util .top_menu {}
@@ -92,6 +112,13 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .contBox4 .reserve_box .thumb {margin-top:25px;}
 #wrapCont .contBox4 .btn_box {position:absolute; top:10px; right:0;}
 
+#wrapCont .contents {margin-top:50px;}
+#wrapCont .contents .title {font-size:35px;}
+#wrapCont .contents .top_box {margin-top:75px; padding:70px 0; height:253px;}
+#wrapCont .contents .top_box .txt {text-align:center; font-size:22px; font-weight:400;}
+#wrapCont .contents .top_box .normal {margin-top:30px; padding:20px; font-size:22px;}
+
+
 #wrapFooter {margin-top:55px;}
 #wrapFooter .copyright {height:55px; line-height:55px; font-size:14px;}
 
@@ -101,6 +128,14 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .mBoard th {padding:15px 0;}
 .mBoard td {padding:15px 15px;}
 .mBoard .last {border-right:0 none;}
+
+/* tab_menu */
+.tab_menu {margin-top:40px;}
+.tab_menu ul {border-top:0 none;}
+.tab_menu li {float:left; text-align:center;}
+.tab_menu li a {font-size:17px;}
+.tab_menu li a:first-child {}
+.tab_menu li.on a {}
 
 
 /* common --------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -131,5 +166,3 @@ a.btn_ico, button.btn_ico, span.btn_ico {background-image:url('/img/common/sp_ic
 .btn_ico.more {width:23px; height:23px; background-position:0 -59px;}
 .btn_ico.m_count {margin-right:7px; width:8px; height:12px; background-position:-23px -59px;}
 .btn_ico.noti {margin-top:-2px; margin-right:2px; width:15px; height:15px; background-position:-34px -61px;}
-
-
