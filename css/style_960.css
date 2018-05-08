@@ -1,7 +1,7 @@
 
 body, form, input, select, textarea, button { font-size:14px; line-height:18px; }
 
-.wrap {position:relative; margin:0 auto; width:1170px;}
+.wrap {position:relative; margin:0 auto; width:1170px; z-index:5;}
 
 /* layout -----------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Top */
@@ -65,6 +65,11 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .main_slide .bx-wrapper .bx-controls-auto .bx-controls-auto-item {display:inline-block; vertical-align:bottom; *zoom:1; *display: inline;}
 #wrapCont .main_slide .bx-wrapper .bx-pager-item {font-size:0; line-height:0;}
 
+/* 콘텐츠 오브젝트 */ 
+#wrapCont .obj {}
+#wrapCont .reserve.obj:before {top:135px; left:50%; margin-left:-646px; width:210px; height:100px; background:url('/img/common/obj_circle.png') no-repeat center bottom;}
+#wrapCont .reserve.obj:after {top:290px; right:0; width:156px; height:343px; background:url('/img/common/obj_tri.png') no-repeat center bottom;}
+#wrapCont .obj.type01:after {bottom:-20%; left:-10px; width:138px; height:205px; background:url('/img/common/obj_circle.png') no-repeat right top;}
 
 
 #wrapCont .notice_box {margin-top:31px; padding:20px;}
@@ -112,11 +117,35 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .contBox4 .reserve_box .thumb {margin-top:25px;}
 #wrapCont .contBox4 .btn_box {position:absolute; top:10px; right:0;}
 
-#wrapCont .contents {margin-top:50px;}
+/* 담당자 안내 */
+#wrapCont .contents {margin-top:50px; padding-bottom:50px;}
 #wrapCont .contents .title {font-size:35px;}
 #wrapCont .contents .top_box {margin-top:75px; padding:70px 0; height:253px;}
 #wrapCont .contents .top_box .txt {text-align:center; font-size:22px; font-weight:400;}
 #wrapCont .contents .top_box .normal {margin-top:30px; padding:20px; font-size:22px;}
+#wrapCont .cont_box {margin-top:60px;}
+#wrapCont .cont_box .sub_tit {font-size:22px;}
+#wrapCont .cont_box #my_reserve {margin-top:15px;}
+#wrapCont .cont_box .toggle_menu dt {padding:25px 0; background-position:98% bottom;}
+#wrapCont .cont_box .toggle_menu dt.on { background-position:98% top;}
+#wrapCont .cont_box #my_reserve dt .date {padding:0 55px;}
+#wrapCont .cont_box #my_reserve dt > span {font-size:17px;}
+#wrapCont .cont_box #my_reserve dd {padding:25px 0 25px; font-family:'NanumSquareRound', sans-serif;}
+#wrapCont .cont_box #my_reserve dd > ul {padding-left:200px}
+#wrapCont .cont_box #my_reserve dd > ul > li {margin:15px 0; padding-left:15px; float:left; width:50%;}
+#wrapCont .cont_box #my_reserve dd > ul > li:after {top:7px; left:0; width:3px; height:3px;}
+#wrapCont .cont_box #my_reserve dd > ul > li > div {display:inline-block; vertical-align:top; color:#222;}
+#wrapCont .cont_box #my_reserve dd > ul > li .r_tit {width:110px;}
+#wrapCont .cont_box #my_reserve dd > ul > li .t_tit {}
+#wrapCont .cont_box #my_reserve dd > ul > li ul {margin-top:5px;}
+#wrapCont .cont_box #my_reserve dd > ul > li li {font-size:14px;}
+#wrapCont .cont_box #my_reserve dd > ul > li li .gLeft {margin-right:15px;}
+
+#wrapCont .cont_box #my_faq {margin-top:40px;}
+#wrapCont .cont_box #my_faq dt {font-size:15px;}
+#wrapCont .cont_box #my_faq dt.on {}
+#wrapCont .cont_box #my_faq dt .q_mark {padding:0 50px 0 40px; font-size:17px;}
+#wrapCont .cont_box #my_faq dd {padding:30px 100px;}
 
 
 #wrapFooter {margin-top:55px;}

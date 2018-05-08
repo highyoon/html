@@ -5,7 +5,7 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 
 /* layout -----------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Top */
-#wrapTop {height:58px; background:#fff;}
+#wrapTop {height:58px; border-bottom:1px solid #fa8808; background:#fff;}
 #wrapTop h1 {top:12px; left:50%; margin-left:-41px; width:83px; height:31px;}
 #wrapTop h1 a {background-image:url('/img/common/m_logo.png'); background-repeat:no-repeat; background-size:83px 31px;}
 #wrapTop .menuBox {display:none;}
@@ -21,6 +21,7 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 
 /* body */
 #wrapCont {background:#f2f2f2;}
+#wrapCont.sub {padding:0 18px; background:#fff;}
 #wrapCont .sec_tit {text-align:center; font-size:1.3rem;}
 #wrapCont .main_util {}
 #wrapCont .main_util .top_menu {margin:10px 0;}
@@ -83,8 +84,33 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 
 #wrapCont .contBox5 {padding:30px 17px;}
 
-/* Footer */
+#wrapCont .status {display:none;}
 
+#wrapCont .contents .title {margin-top:40px; font-size:1.7rem;}
+.tab_menu {margin-top:30px;}
+#wrapCont .contents .top_box {margin-top:50px; padding:25px 62px;}
+#wrapCont .contents .top_box .txt {line-height:1.5; text-align:center; font-size:.9rem;}
+#wrapCont .contents .top_box .normal {margin-top:15px; padding:15px; font-size:.9rem; font-weight:600;}
+
+#wrapCont .cont_box {margin-top:50px;}
+#wrapCont .cont_box .sub_tit {line-height:1; font-size:1.1rem;}
+#wrapCont .cont_box #my_reserve {margin-top:15px;}
+#wrapCont .cont_box #my_reserve dt {padding:18px 15px 10px; line-height:1.4; font-size:.9rem; background-image:url('/img/common/dt_list_mState.png'); background-size:17px 120px; background-position:97% 120%;}
+#wrapCont .cont_box #my_reserve dt.on {background-position:97% -20%;}
+#wrapCont .cont_box #my_reserve dt .subject {display:block;}
+#wrapCont .cont_box #my_reserve dd > ul {padding:15px;}
+#wrapCont .cont_box #my_reserve dd > ul > li {margin:15px 0; padding-left:13px; line-height:1.4;}
+#wrapCont .cont_box #my_reserve dd > ul > li:after {top:5px; left:0; width:3px; height:3px;}
+#wrapCont .cont_box #my_reserve dd > ul > li ul {margin-top:10px;}
+
+#wrapCont .cont_box #my_faq {margin-top:40px;}
+#wrapCont .cont_box #my_faq dt {padding:18px 15px 10px; line-height:1.4; font-size:.9rem; background-image:url('/img/common/dt_list_mState.png'); background-size:17px 120px; background-position:97% 120%;}
+#wrapCont .cont_box #my_faq dt.on {background-position:97% -20%;}
+#wrapCont .cont_box #my_faq dt .q_mark {padding:0 20px 0 20px; font-size:17px;}
+#wrapCont .cont_box #my_faq dd {padding:28px 40px; line-height:1.4;}
+
+/* Footer */
+#wrapFooter {padding:15px 0;}
 
 
 /* common --------------------------------------------------------------------------------------------------------------------------------------------*/

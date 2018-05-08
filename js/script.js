@@ -65,6 +65,26 @@ $(document).ready(function(){
 			$(showBox).animate({'height':'41px'}, 75).removeClass('active');
 		}
 	});
+
+	//예약내역 toggle
+	r_list();
+	$(".toggle_menu dd").hide();
+	$(".toggle_menu dd").hide();
+	$(".toggle_menu dt").eq(0).addClass("on");
+	$(".toggle_menu dd").eq(0).show();
+	function r_list(){
+		$(".toggle_menu dt").click(function(){
+            if (!$(this).hasClass("on")) {
+                $(".toggle_menu dt").removeClass("on");
+                $(".toggle_menu dd").hide();
+                $(this).addClass("on");
+                $(this).next().slideDown();
+            } else {
+                $(this).removeClass("on");
+                $(this).next().slideUp();
+            }
+		});
+	}
 	
 	//topSearch
 	$('#wrapTop .btnSearch').click(function(){
