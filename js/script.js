@@ -339,6 +339,7 @@ $(document).ready(function(){
 		$('.com_pop').fadeOut(200);
 		$('#maskPC').fadeOut(200);
 	});
+
 	//scroll
     $(window).scroll(function(e){
 		var nowPos = $(window).scrollTop();
@@ -378,13 +379,8 @@ $(document).ready(function(){
 
 		} else {
 			
-			//mobile location
-			var lo_height = $('#wrapCont .title').height();
-			if( nowPos <= lo_height ){
-				$('#wrapCont .status').stop().animate({'top':lo_height + 79 + 'px'}, 150, 'easeOutCirc');
-			} else {
-				$('#wrapCont .status').stop().animate({'top':'45px'}, 150, 'easeOutCirc');
-			}
+
 		}
 	});
 });
+31

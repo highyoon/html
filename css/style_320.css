@@ -109,27 +109,41 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 #wrapCont .cont_box #my_faq dt .q_mark {padding:0 20px 0 20px; font-size:17px;}
 #wrapCont .cont_box #my_faq dd {padding:28px 40px; line-height:1.4;}
 
+#wrapCont .agree_box {margin-top:50px;}
+#wrapCont .agree_wrap {padding:0 14px 24px;}
+#wrapCont .agree_top {padding:14px;}
+#wrapCont .agree_top .tit {line-height:1.4; font-size:1rem;}
+#wrapCont .agree_tit {margin-top:45px; font-size:1rem;}
+#wrapCont .agree_box .agchk {margin-top:8px;}
+#wrapCont .agree_scroll  {margin-top:15px; padding:10px 23px; height:179px;}
+#wrapCont .agree_box .btn_box {margin-top:30px;}
+
 /* Footer */
-#wrapFooter {padding:15px 0;}
+#wrapFooter {margin-top:50px; padding:15px 0;}
 
 
 /* common --------------------------------------------------------------------------------------------------------------------------------------------*/
 #maskMobile { z-index:10; background-color:#232927; opacity:.7; }
 .scroll_navi {display:none;}
 
-.btnTop { display:none; right:0; bottom:103px; width:50px; height:50px;}
+.btnTop { display:none; right:15px; bottom:103px; width:43px; height:43px;}
 
 /* table */
 .mBoard .rwd-table th {display:none;}
 .mBoard .rwd-table td {display:block; border-right:0 none;}
 .mBoard .rwd-table td:before {content: attr(data-th) ": "; display: inline-block; width:30%; text-align:left; background:#f8f8f8;}
     
+.ip_hidden + label {display:inline-block; padding:5px 0  5px 30px; background: url('/img/common/m_chk_off.gif') 0 3px no-repeat; background-size:16px 16px;}
+.ip_hidden label.on {background: url('/img/common/m_chk_on.gif') 0 3px no-repeat; background-size:16px 16px;}
+.ip_hidden:checked + label {background: url('/img/common/m_chk_on.gif') 0 3px no-repeat; background-size:16px 16px;}
 
 
 /* button */
 .btn_box {}
 .btn_box .view {padding:10px 20px;}
 .btn_box .view > span {padding-right:20px; font-size:15px; background-position:center right;}
+.btn_box .next {padding:10px 20px;}
+.btn_box .next span {padding-right:20px; font-size:15px; background-position:center right;}
 
 /* 이미지형 아이콘 */
 a.btn_ico, button.btn_ico, span.btn_ico {background-image:url('/img/common/sp_icon.png'); background-repeat:no-repeat; background-size:250px 250px;}

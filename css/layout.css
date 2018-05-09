@@ -52,7 +52,7 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 /* Body */
 #wrapCont {}
 
-#wrapCont .status {position:relative; border-bottom:1px solid #dedede; background-color:#fafafa;}
+#wrapCont .status {position:relative; border-bottom:1px solid #dedede; background-color:#fafafa; z-index:10;}
 #wrapCont .status .wrap > ul {position:relative;}
 #wrapCont .status .wrap > ul > li {position:relative; float:left; color:#222; box-sizing:border-box;}
 #wrapCont .status .wrap > ul > li a {display:block; overflow:hidden; height:100%; color:#222; box-sizing:border-box;}
@@ -142,6 +142,8 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 .scroll_navi ul li .navi_ico {display:block; margin:0 auto; background-repeat:no-repeat; background-image:url('/img/common/bg_navi.png');}
 .scroll_navi ul li .tooltip {display:none; position:absolute; color:#fff; background-image:url('/img/common/bg_tooltip.png'); background-repeat:no-repeat;}
 
+.btnTop {position:fixed; display:none; border:1px solid #dedede;}
+
 /* sub ---------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* 담당자 안내 */
@@ -171,6 +173,12 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .cont_box #my_faq dt .q_mark {display:inline-block; color:#fa8808; font-weight:bold;}
 #wrapCont .cont_box #my_faq dd {border:1px solid #dedede; border-bottom:0 none; background:#fafafa;}
 
+#wrapCont .agree_wrap {border:1px solid #dedede;}
+#wrapCont .agree_top {border:solid #dedede; border-width:1px 1px 0 1px; background:#fafafa;}
+#wrapCont .agree_top .tit {display:inline-block; font-weight:600;}
+#wrapCont .agree_tit {font-weight:600;}
+#wrapCont .agree_scroll {overflow-y:auto; line-height:1.4; box-sizing:border-box; border:1px solid #dedede;}
+
 .gWrap {overflow:hidden;}
 .gLeft {float:left;}
 .gRight {float:right;}
@@ -190,12 +198,21 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 .tab_menu li.on a {border:solid #ff971c; width:calc(100% - 2px);  border-width:1px 1px 0 1px; background:#fff;}
 .tab_menu.col_3 li {width:calc(33.333% - 1px);}
 
+/* input */
+.ip_hidden {position:absolute; top:50%; right:1px; width:22px; height:22px; margin-top:-11px; opacity:0; outline:0; -webkit-appearance:none; z-index:9;}
+.ip_hidden + label {display:inline-block; padding:5px 0  5px 40px; background: url('/img/common/chk_off.gif') 0 3px no-repeat; background-size:21px 21px;}
+.ip_hidden label.on {background: url('/img/common/chk_on.gif') 0 3px no-repeat; background-size:21px 21px;}
+.ip_hidden:checked + label {background: url('/img/common/chk_on.gif') 0 3px no-repeat; background-size:21px 21px;}
+
+
 /* Button */
 .btn_box:before {display:block; content:""; clear:both;}
 .btn_box {text-align:center;}
 .btn_box a {display:inline-block; margin:0 5px; font-size:14px;}
 .btn_box .view {border:1px solid #ff971c; border-radius:25px;}
 .btn_box .view span {color:#fa8508; background-image:url('/img/common/view_arrow.png'); background-repeat:no-repeat;}
+.btn_box .next {background:#fa8508; border-radius:25px;}
+.btn_box .next span {color:#fff; background-image:url('/img/common/view_arrow01.png'); background-repeat:no-repeat;}
 
 /* 이미지형 아이콘 */
 a.btn_ico, button.btn_ico, span.btn_ico {display:inline-block; overflow:hidden; font-size:0; line-height:0; vertical-align:middle; white-space:nowrap;}

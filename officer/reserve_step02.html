@@ -15,6 +15,11 @@
 
 <body class="">
 <!-- [s]include : Top -->
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 <header id="wrapTop">
 	<div class="wrap">
 		<h1><a href="/index.html">에버에듀 스쿨</a></h1>
@@ -100,77 +105,124 @@
 				</ul>
 			</div>
 			<div class="section">
-				<div class="agree_box">
-					<div class="agree_top">
-						<div class="gWrap">
-							<div class="gLeft">
-								<span class="tit">개인정보 수집·이용 동의</span>
-							</div>
-							<div class="gRight">
-								<div class="chk_all">
-									<input type="checkbox" id="chk_all" class="ip_hidden" />
-									<label for="chk_all" class="agree_text">전체 동의</label>
-								</div>
-							</div>
-						</div>
+				<div class="step_box">
+					<ol>
+						<li>
+							<div class="thumb"></div>
+							행사유형구분
+						</li>
+						<li>
+							<div class="thumb"></div>
+							행사유형구분
+						</li>
+						<li>
+							<div class="thumb"></div>
+							행사유형구분
+						</li>
+						<li>
+							<div class="thumb"></div>
+							행사유형구분
+						</li>
+					</ol>
+				</div>
+				<div class="cont_box">
+					<h3 class="sub_tit">행사 구분</h3>
+					<div class="innder_tab">
+						
 					</div>
-					<div class="agree_wrap">
-						<p class="agree_tit">개인정보 마케팅목적 수집 동의 (필수)</p>
-						<div class="agree_scroll">
-							<pre>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-								수집동의<br>
-							</pre>
-						</div>
-						<p class="agchk">
-							<label><input type="radio" id="agr01Y" name="agr01" title="동의함" class="va_up"> 동의합니다.</label>
-							<label><input type="radio" id="agr01Y" name="agr01" checked="checked" title="동의안함" class="va_up"> 동의하지 않습니다.</label>
-						</p>
-						<p class="agree_tit">개인정보 마케팅 및 광고 목적 활용 동의 (선택)</p>
-						<div class="agree_scroll">
-							<pre>
-								마케팅 및 광고(방문 홍고) 활용에 동의하지 않으셔도 되나,
-								신규 컨텐츠 및 학교단체 프로모션에 대한 방문 홍보 수신이 불가합니다.
-							</pre>
-						</div>
-						<p class="agchk sec">
-							<label><input type="radio" id="agr01Y" name="agr01" title="동의함" class="va_up"> 동의합니다.</label>
-							<label><input type="radio" id="agr01Y" name="agr01" checked="checked" title="동의안함" class="va_up"> 동의하지 않습니다.</label>
-						</p>
+				</div>
+				<div class="cont_box">
+					<h3 class="sub_tit">행사 유형</h3>
+					<div class="cal_box">
+						<ul class="resort_list">
+							<li>
+								<input type="checkbox" id="" class="ip_hidden" />
+								<label for="" class="agree_text">에버랜드</label>
+							</li>
+							<li>
+								<input type="checkbox" id="" class="ip_hidden" />
+								<label for="" class="agree_text">에버랜드 + 체험학습</label>
+							</li>
+							<li>
+								<input type="checkbox" id="" class="ip_hidden" />
+								<label for="" class="agree_text">캐리비안 베이</label>
+							</li>
+							<li>
+								<input type="checkbox" id="" class="ip_hidden" />
+								<label for="" class="agree_text">캐리비안 베이 + 체험학습</label>
+							</li>
+						</ul>
+						<div id="datepicker"></div>
+					</div>
+				</div>
+				<div class="cont_box">
+					<h3 class="sub_tit"><span class="part">에버랜드</span>입원수 입력</h3>
+					<div class="mBoard">
+						<table>
+							<caption>신청 인원 입력항목</caption>
+							<colgroup>
+								<col>
+							</colgroup>
+							<thead>
+								<th scope="col">구분</th>
+								<th scope="col">신청인원</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>대인(추가인솔)</td>
+									<td><input type="text"> 명</td>
+								</tr>
+								<tr>
+									<td>청소년(중/고등)</td>
+									<td><input type="text"> 명</td>
+								</tr>
+								<tr>
+									<td>소인(초등)</td>
+									<td><input type="text"> 명</td>
+								</tr>
+								<tr>
+									<td>대인(단체인원 15명부터 10명당 1명 적용)</td>
+									<td><input type="text"> 명</td>
+								</tr>
+								<tr>
+									<td>기초생활수급자</td>
+									<td><input type="text"> 명</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td></td>
+									<td>총인원<strong></strong>명</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+				<div class="cont_box">
+					<div class="mBoard">
+						<table>
+							<caption>인솔/보호자 정보 입력</caption>
+							<colgroup>
+								<col width="20%" />
+								<col width="40%" />
+								<col width="40%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">이름</th>
+									<th scope="col">휴대폰</th>
+									<th scope="col">E-mail</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="text" class="gFull"></td>
+									<td><input type="text" class="gFull"></td>
+									<td><input type="text" class="gFull"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 				<div class="btn_box"><a href="#none" class="next"><span>다음단계</span></a></div>
 			</div>
