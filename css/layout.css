@@ -128,7 +128,7 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .contBox4 .reserve_box .col_4 {float:left; }
 #wrapCont .contBox4 .reserve_box .tit {position:relative; color:#222; letter-spacing:-1px; font-weight:normal; font-family:'NanumSquareRound', sans-serif; }
 #wrapCont .contBox4 .reserve_box .tit:after {position:absolute; display:block; content:'';}
-#wrapCont .contBox4 .reserve_box .thumb {}
+#wrapCont .contBox4 .reserve_box .thumb {font-family:'NanumSquare', sans-serif;}
 
 #wrapFooter {text-align:center; border-top:1px solid #d7d7d7; background:#e0e0e0;}
 #wrapFooter .copyright {color:#777;}
@@ -152,6 +152,28 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .contents .top_box {font-family:'NanumSquare', sans-serif; background-image:url('/img/officer/std_reserve.jpg'); background-size:100% auto; background-position:center; background-repeat:no-repeat; box-sizing:border-box;}
 #wrapCont .contents .top_box .txt {color:#fff;}
 #wrapCont .contents .top_box .normal {color:#fff; background:#ff8808;}
+
+#wrapCont .step_box {}
+#wrapCont .step_box > ol {margin:0 auto; text-align:center;}
+#wrapCont .step_box > ol > li {position:relative; display:inline-block;}
+#wrapCont .step_box > ol > li:after {position:absolute; display:block; content:''; background:#dedede; z-index:1;}
+#wrapCont .step_box > ol > li.last:after {display:none;} 
+#wrapCont .step_box .thumb {position:relative; color:#bfbfbf; font-weight:600; box-sizing:border-box;  background-image:url('/img/officer/bg_step_off.png'); background-repeat:no-repeat; z-index:3;}
+#wrapCont .step_box .on .thumb {color:#fa8808; background-image:url('/img/officer/bg_step_on1.png');}
+#wrapCont .step_box .thumb > span {line-height:1.1;}
+#wrapCont .step_box li:first-child + li.on .thumb {background-image:url('/img/officer/bg_step_on2.png');}
+#wrapCont .step_box li:first-child + li + li.on .thumb {background-image:url('/img/officer/bg_step_on3.png');}
+#wrapCont .step_box li:first-child + li + li + li.on .thumb {background-image:url('/img/officer/bg_step_on4.png');}
+#wrapCont .step_box > ol > li.on.last .thumb {background-image:url('/img/officer/bg_step_last.png') !important;}
+
+.innder_tab {}
+.double_tab {display:block; margin-right:-3px; border:solid 1px #dedede;}
+.double_tab .col_2 {position:relative; margin-bottom:-1px; display:block; float:left; width:calc(50% - 1px);  border-right:solid 1px #dedede; z-index:10;}
+.double_tab .col_2+.double_tab .col_2 {border:none;}
+.double_tab .col_2 a {display:block; width:100%; height:100%; text-align:center;}
+.double_tab .col_2 a {z-index: 100; margin:-1px; border:solid 1px #dedede;}
+.double_tab .col_2 a.on {margin:-1px; color:#fff; border:solid 1px #ff971c; background:#ff971c; z-index:100;}
+
 #wrapCont .cont_box {}
 #wrapCont .cont_box .sub_tit {font-family:'NanumSquare', sans-serif;}
 #wrapCont .cont_box #my_reserve {border-top:1px solid #ff971c;}
@@ -172,6 +194,18 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .cont_box #my_faq dt.on {color:#fa8808;}
 #wrapCont .cont_box #my_faq dt .q_mark {display:inline-block; color:#fa8808; font-weight:bold;}
 #wrapCont .cont_box #my_faq dd {border:1px solid #dedede; border-bottom:0 none; background:#fafafa;}
+
+#wrapCont .cont_box .cal_box {position:relative; box-sizing:border-box; border:1px solid #dedede; border-top:1px solid #ff971c;}
+#wrapCont .cont_box .cal_box .resort_list {}
+#wrapCont .cont_box .cal_box .cal {border:1px solid #dedede;}
+
+#wrapCont .cont_box .exper_box {box-sizing:border-box; border:solid #dedede; border-width:0 1px 0 1px; border-top:1px solid #ff971c;}
+#wrapCont .cont_box .exper_choice {border-bottom:1px solid #dedede;}
+#wrapCont .cont_box .exper_choice .ex_tit {font-weight:600;}
+#wrapCont .cont_box .exper_choice > ul {overflow:hidden;}
+#wrapCont .cont_box .exper_choice > ul li {float:left;}
+#wrapCont .cont_box .exper_choice .thumb {}
+#wrapCont .cont_box .exper_choice .thumb img {width:100%;}
 
 #wrapCont .agree_wrap {border:1px solid #dedede;}
 #wrapCont .agree_top {border:solid #dedede; border-width:1px 1px 0 1px; background:#fafafa;}
@@ -203,6 +237,31 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 .ip_hidden + label {display:inline-block; padding:5px 0  5px 40px; background: url('/img/common/chk_off.gif') 0 3px no-repeat; background-size:21px 21px;}
 .ip_hidden label.on {background: url('/img/common/chk_on.gif') 0 3px no-repeat; background-size:21px 21px;}
 .ip_hidden:checked + label {background: url('/img/common/chk_on.gif') 0 3px no-repeat; background-size:21px 21px;}
+
+/* 데이트피커 */
+.ui-datepicker {box-sizing:border-box; background:#fff;}
+.ui-widget.ui-widget-content {width:100%;;}
+.ui-datepicker .ui-datepicker-header {position:relative; background:#fafafa;}
+.ui-datepicker .ui-datepicker-title {padding:1em 0 .8em;font-size:17px; font-weight:600; color:#222; text-align:center;}
+.ui-datepicker-year {margin-left:5px;}
+.ui-datepicker .ui-icon {overflow:hidden; text-indent:-999em; background-repeat:no-repeat;}
+.ui-widget-header .ui-icon {background-image:url('/img/common/cal_arrow.png');}
+.ui-icon {width:11px; height:13px;}
+.ui-icon-circle-triangle-w {background-position:center top;}
+.ui-icon-circle-triangle-e {background-position:center bottom;}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {position:absolute; top:18px; width:1.8em; height:1.8em;}
+.ui-datepicker .ui-datepicker-prev {left:2px;}
+.ui-datepicker .ui-datepicker-next {right:0;}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {display:block; position:absolute; left:50%; margin-left:-8px; top:50%; margin-top:-12px;}
+.ui-datepicker-calendar {width:100%; border-top:1px solid #dedede;}
+.ui-datepicker th {padding:.8em; font-size:1rem; font-weight:300; border-bottom:1px solid #dedede;}
+.ui-datepicker td {font-size:12px; font-weight:300; text-align:center;}
+.ui-datepicker td a {display:block; padding:.7em; font-size:.8rem; text-decoration:none;}
+.ui-state-highlight {color:#fff; background:#fa8508; border-radius:50%;}
+.ui-state-active {color:#fff; background:#fa8508; border-radius:50%;}
+.ui-state-active:hover {color:#fff;}
+.ui-datepicker-calendar > thead th:first-child span, .ui-datepicker-calendar > tbody td:first-child a {color:#f00;}
+.ui-datepicker-calendar > thead th:last-child span, .ui-datepicker-calendar > tbody td:last-child a {color:blue;}
 
 
 /* Button */

@@ -85,7 +85,14 @@ $(document).ready(function(){
             }
 		});
 	}
-	
+	//datepicker
+	$(function() {
+		$("#datepicker").datepicker({
+			dateFormat: "yy/mm/dd",
+			monthNames: ['1 월','2 월','3 월','4 월','5 월','6 월','7 월','8 월','9 월','10 월','11 월','12 월'],
+			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],  
+		});
+	 });
 	//topSearch
 	$('#wrapTop .btnSearch').click(function(){
 		if( winWidth>checkWidth ){

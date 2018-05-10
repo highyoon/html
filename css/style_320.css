@@ -92,6 +92,11 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 #wrapCont .contents .top_box .txt {line-height:1.5; text-align:center; font-size:.9rem;}
 #wrapCont .contents .top_box .normal {margin-top:15px; padding:15px; font-size:.9rem; font-weight:600;}
 
+#wrapCont .step_box {}
+#wrapCont .step_box > ol {}
+#wrapCont .step_box > ol > li {}
+#wrapCont .step_box .thumb {}
+
 #wrapCont .cont_box {margin-top:50px;}
 #wrapCont .cont_box .sub_tit {line-height:1; font-size:1.1rem;}
 #wrapCont .cont_box #my_reserve {margin-top:15px;}
@@ -108,6 +113,16 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 #wrapCont .cont_box #my_faq dt.on {background-position:97% -20%;}
 #wrapCont .cont_box #my_faq dt .q_mark {padding:0 20px 0 20px; font-size:17px;}
 #wrapCont .cont_box #my_faq dd {padding:28px 40px; line-height:1.4;}
+
+#wrapCont .cont_box .cal_box {}
+#wrapCont .cont_box .cal_box .resort_list {}
+#wrapCont .cont_box .cal_box .cal {}
+
+#wrapCont .cont_box .exper_box {}
+#wrapCont .cont_box .exper_choice {}
+#wrapCont .cont_box .exper_choice .ex_tit {}
+#wrapCont .cont_box .exper_choice > ul {}
+#wrapCont .cont_box .exper_choice > ul li {}
 
 #wrapCont .agree_box {margin-top:50px;}
 #wrapCont .agree_wrap {padding:0 14px 24px;}

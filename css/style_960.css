@@ -123,8 +123,16 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .contents .top_box {margin-top:75px; padding:70px 0; height:253px;}
 #wrapCont .contents .top_box .txt {text-align:center; font-size:22px; font-weight:400;}
 #wrapCont .contents .top_box .normal {margin-top:30px; padding:20px; font-size:22px;}
+
+#wrapCont .step_box {margin-top:70px;}
+#wrapCont .step_box > ol {}
+#wrapCont .step_box > ol > li {margin:15px;}
+#wrapCont .step_box > ol > li:after {top:50px; right:-43px; width:50px; height:1px;}
+#wrapCont .step_box .thumb {margin:0 auto 15px; width:99px; height:99px; font-size:20px; background-position:center top;}
+#wrapCont .step_box .thumb > span {display:inline-block; padding-top:30px;}
+
 #wrapCont .cont_box {margin-top:60px;}
-#wrapCont .cont_box .sub_tit {font-size:22px;}
+#wrapCont .cont_box .sub_tit {margin-bottom:30px; font-size:22px;}
 #wrapCont .cont_box #my_reserve {margin-top:15px;}
 #wrapCont .cont_box .toggle_menu dt {padding:25px 0; background-position:98% bottom;}
 #wrapCont .cont_box .toggle_menu dt.on { background-position:98% top;}
@@ -147,17 +155,33 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .cont_box #my_faq dt .q_mark {padding:0 50px 0 40px; font-size:17px;}
 #wrapCont .cont_box #my_faq dd {padding:30px 100px;}
 
+#wrapCont .cont_box .cal_box {padding:20px 20px 20px 30px; min-height:315px;}
+#wrapCont .cont_box .cal_box .resort_list {margin:55px 0;}
+#wrapCont .cont_box .cal_box .resort_list li {margin:15px 0;}
+#wrapCont .cont_box .cal_box .cal {position:absolute; top:20px; right:20px; width:568px; height:278px;}
+
+#wrapCont .cont_box .exper_box {}
+#wrapCont .cont_box .exper_choice {padding:40px 40px 15px;}
+#wrapCont .cont_box .exper_choice .ex_tit {font-size:17px;}
+#wrapCont .cont_box .exper_choice > ul {margin:0 -8px;}
+#wrapCont .cont_box .exper_choice > ul li {margin:15px 8px; width:calc(20% - 16px);}
+#wrapCont .cont_box .exper_choice .thumb {}
+
 #wrapCont .agree_box {position:relative; margin-top:70px;}
 #wrapCont .agree_wrap {padding:0 40px 48px;}
 #wrapCont .agree_top {padding:20px 40px;}
 #wrapCont .agree_top .tit {padding-top:7px; font-size:17px;}
 #wrapCont .agree_tit {margin-top:48px; font-size:17px;}
 #wrapCont .agree_scroll {margin-top:25px; padding:15px 40px; height:285px;}
-#wrapCont .agree_box .agchk {position:absolute; top:105px; right:40px;}
+#wrapCont .agree_box .agchk {position:absolute; top:119px; right:40px;}
 #wrapCont .agree_box .agchk label {margin-left:15px;}
-#wrapCont .agree_box .agchk.sec {top:483px;}
-#wrapCont .agree_box .btn_box {margin-top:50px;}
+#wrapCont .agree_box .agchk.sec {top:496px;}
+#wrapCont .btn_box {margin-top:50px;}
 
+
+.double_tab {height:50px;}
+.double_tab .col_2 {height:50px; line-height:50px;}
+.double_tab .col_2 a {font-size:17px;}
 
 #wrapFooter {margin-top:55px;}
 #wrapFooter .copyright {height:55px; line-height:55px; font-size:14px;}
