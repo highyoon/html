@@ -93,6 +93,15 @@ $(document).ready(function(){
 			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],  
 		});
 	 });
+
+	 $('.exper_box .agree_text').click(function(){
+		$('.popup').fadeIn(200);
+		$('#maskPC').fadeIn(200);
+	});
+	$('.btn_close a').click(function(){
+		$('.popup').fadeOut(200);
+		$('#maskPC').fadeOut(200);
+	});
 	//topSearch
 	$('#wrapTop .btnSearch').click(function(){
 		if( winWidth>checkWidth ){
@@ -337,15 +346,6 @@ $(document).ready(function(){
 		$parent.add($cont).addClass('on').siblings().removeClass('on');
 		$('.menu li.active').prev().addClass('no');
 	}).find('.menu a').eq(0).trigger('click');
-	// affiliated popup
-	$('.section .company').click(function(){
-		$('.com_pop').fadeIn(200);
-		$('#maskPC').fadeIn(200);
-	});
-	$('.pop_close a').click(function(){
-		$('.com_pop').fadeOut(200);
-		$('#maskPC').fadeOut(200);
-	});
 
 	//scroll
     $(window).scroll(function(e){

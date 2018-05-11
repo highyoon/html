@@ -133,6 +133,8 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 
 #wrapCont .cont_box {margin-top:60px;}
 #wrapCont .cont_box .sub_tit {margin-bottom:30px; font-size:22px;}
+#wrapCont .cont_box .sub_tit > span {padding-right:25px; font-size:22px;}
+#wrapCont .cont_box .sub_tit > span:after {top:1px; right:12px; width:1px; height:13px; background:#dedede;}
 #wrapCont .cont_box #my_reserve {margin-top:15px;}
 #wrapCont .cont_box .toggle_menu dt {padding:25px 0; background-position:98% bottom;}
 #wrapCont .cont_box .toggle_menu dt.on { background-position:98% top;}
@@ -166,6 +168,10 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .cont_box .exper_choice > ul {margin:0 -8px;}
 #wrapCont .cont_box .exper_choice > ul li {margin:15px 8px; width:calc(20% - 16px);}
 #wrapCont .cont_box .exper_choice .thumb {}
+
+#wrapCont .cont_box .done {padding:50px;}
+#wrapCont .cont_box .done > p {font-size:22px;}
+#wrapCont .cont_box .done > p > span {}
 
 #wrapCont .agree_box {position:relative; margin-top:70px;}
 #wrapCont .agree_wrap {padding:0 40px 48px;}
@@ -214,6 +220,18 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .scroll_navi ul li.nav_02 .tooltip {background-position:0 -45px;}
 .scroll_navi ul li.nav_03 .tooltip {background-position:0 -90px;}
 .scroll_navi ul li:hover .tooltip {display:block;}
+
+/* 팝업 */
+.popup {top:50%; left:50%; margin:-300px 0 0 -585px; padding:85px 60px 40px;}
+.exper_pop.popup {width:1170px;}
+.popup .pop_wrap {}
+.popup .pop_wrap h3 {margin-bottom:30px; font-size:22px;}
+.popup .pop_wrap .gUtil {}
+.popup .pop_wrap .mBoard {margin-bottom:75px;}
+.popup .pop_wrap .mBoard tfoot strong {margin:0 40px; font-size:22px;}
+.popup .gScroll {overflow-y:auto; height:620px;}
+.popup .btn_close {top:20px; right:20px; width:23px; height:24px;}
+.popup .btn_close a {background-image:url('/img/common/pop_close.png');}
 
 /* button */
 .btn_box {}

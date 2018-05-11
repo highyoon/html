@@ -124,6 +124,10 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 #wrapCont .cont_box .exper_choice > ul {}
 #wrapCont .cont_box .exper_choice > ul li {}
 
+#wrapCont .cont_box .done {}
+#wrapCont .cont_box .done > p {}
+#wrapCont .cont_box .done > p > span {}
+
 #wrapCont .agree_box {margin-top:50px;}
 #wrapCont .agree_wrap {padding:0 14px 24px;}
 #wrapCont .agree_top {padding:14px;}
@@ -152,6 +156,14 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 .ip_hidden label.on {background: url('/img/common/m_chk_on.gif') 0 3px no-repeat; background-size:16px 16px;}
 .ip_hidden:checked + label {background: url('/img/common/m_chk_on.gif') 0 3px no-repeat; background-size:16px 16px;}
 
+/* 팝업 */
+.popup {}
+.popup .pop_wrap {}
+.popup .pop_wrap h3 {}
+.popup .pop_wrap .gUtil {}
+.popup .pop_wrap .gScroll {overflow-y:auto;}
+.popup .btn_close {}
+.popup .btn_close a {}
 
 /* button */
 .btn_box {}
