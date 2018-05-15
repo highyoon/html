@@ -62,7 +62,36 @@ $(document).ready(function(){
 				pager: false
 			});
 		}
-
+	//autocomplete
+	$( function() {
+		var availableTags = [
+		  "ActionScript",
+		  "AppleScript",
+		  "Asp",
+		  "BASIC",
+		  "C",
+		  "C++",
+		  "Clojure",
+		  "COBOL",
+		  "ColdFusion",
+		  "Erlang",
+		  "Fortran",
+		  "Groovy",
+		  "Haskell",
+		  "Java",
+		  "JavaScript",
+		  "Lisp",
+		  "Perl",
+		  "PHP",
+		  "Python",
+		  "Ruby",
+		  "Scala",
+		  "Scheme"
+		];
+		$( "#tag_name" ).autocomplete({
+		  source: availableTags
+		});
+	  } );
 	//location
 	$('#wrapCont .status .depth .now').click(function(e){
 		e.preventDefault();
@@ -378,4 +407,3 @@ $(document).ready(function(){
 		}
 	});
 });
-31

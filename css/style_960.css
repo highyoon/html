@@ -120,6 +120,7 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 /* 담당자 안내 */
 #wrapCont .contents {margin-top:50px; padding-bottom:50px;}
 #wrapCont .contents .title {font-size:35px;}
+#wrapCont .contents .title.tit_box {padding-bottom:40px;}
 #wrapCont .contents .top_box {margin-top:75px; padding:70px 0; height:253px;}
 #wrapCont .contents .top_box .txt {text-align:center; font-size:22px; font-weight:400;}
 #wrapCont .contents .top_box .normal {margin-top:30px; padding:20px; font-size:22px;}
@@ -184,6 +185,31 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .agree_box .agchk.sec {top:496px;}
 #wrapCont .btn_box {margin-top:50px;}
 
+/* why에버랜드 */
+#wrapCont .list_box {}
+#wrapCont .list_box.col {}
+#wrapCont .list_box.col > div {margin-left:-1px; padding:39px 29px; width:calc(25% - 1px); height:257px;}
+#wrapCont .list_box.col > div b {margin-bottom:12px; font-size:17px;}
+#wrapCont .list_box.col > div > div {right:39px; bottom:39px;}
+#wrapCont .list_box.col > div > div > span {font-size:54px;}
+#wrapCont .list_box.col .first {font-size:20px; color:#fff; background:#ff971c;}
+#wrapCont .list_box.col .first:after {left:100%; top:50%; border:solid transparent; content:" "; height:0; width:0; position:absolute; pointer-events: none; border-color:rgba(255, 151, 28, 0); border-left-color:#ff971c; border-width:10px; margin-top:-10px;}
+#wrapCont .safe_box {margin:38px -15px 0; overflow:hidden;}
+#wrapCont .safe_box .col_2 {margin:0 15px; float:left; width:calc(50% - 34px); height:750px;}
+#wrapCont .safe_box .col_2 .box {padding:37px;}
+#wrapCont .safe_box .col_2 .box .tit {margin-bottom:25px; font-size:17px;}
+#wrapCont .safe_box .col_2 .box .tit:after {margin-top:20px; width:28px; height:1px;}
+#wrapCont .safe_box .year_list {position:relative;}
+#wrapCont .safe_box .year_list li {margin:37px 0; line-height:1.4;}
+#wrapCont .safe_box .year_list:after {position:absolute; top:4px; left:5px; display:block; content:''; width:1px; height:560px; background:url('/img/common/year_bar.gif') repeat-y left center; z-index:1;}
+#wrapCont .safe_box .year_list strong {padding-left:24px; width:65px; background-image:url('/img/common/bullet_year.gif');}
+#wrapCont .safe_box .year_list span {padding-left:13px; width:400px;}
+#wrapCont .safe_box .year_list span:after {top:2px; width:1px; height:12px;}
+#wrapCont .safe_box .safe_list {}
+#wrapCont .safe_box .safe_list li {margin:30px 0; padding-left:105px; min-height:75px;}
+#wrapCont .safe_box .safe_list li .thumb {top:0; left:0; width:75px; height:75px;}
+#wrapCont .safe_box .safe_list li > p {line-height:1.6;}
+#wrapCont .safe_box .safe_list li > p > span {font-size:15px;;}
 
 .double_tab {height:50px;}
 .double_tab .col_2 {height:50px; line-height:50px;}
@@ -197,7 +223,6 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 
 /* 셀렉트 박스 */
 .select_box {margin-right:5px; width:180px; height:35px; background-size:35px 34px;}
-.sort.etc .select_box {width:290px;}
 .select_box label {font-size:14px; top:6px; left:9px;}
 .select_box select {width:100%; height:32px; min-height:32px; line-height: 32px; padding:0 50px 0 10px;}
 
@@ -215,6 +240,13 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .mBoard .last {border-right:0 none;}
 .mBoard .table_sub {margin-top:20px; font-size:14px;}
 .mBoard .select_box {width:219px; }
+.mBoard .select_box.shot {width:100px; }
+
+/* autocomplete */
+.ui-autocomplete {width:310px;}
+.ui-autocomplete li {padding:8px; font-size:16px;}
+.ui-autocomplete li:hover {}
+#ui-id-1 {width:250px;}
 
 /* tab_menu */
 .tab_menu {margin-top:40px;}
@@ -265,3 +297,4 @@ a.btn_ico, button.btn_ico, span.btn_ico {background-image:url('/img/common/sp_ic
 .btn_ico.more {width:23px; height:23px; background-position:0 -59px;}
 .btn_ico.m_count {margin-right:7px; width:8px; height:12px; background-position:-23px -59px;}
 .btn_ico.noti {margin-top:-2px; margin-right:2px; width:15px; height:15px; background-position:-34px -61px;}
+.btn_ico.tuv {margin-top:7px; width:91px; height:41px; background-position:-379px -0px;}

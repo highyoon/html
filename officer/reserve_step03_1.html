@@ -157,103 +157,7 @@
 					</div>
 				</div>
 				<div class="cont_box">
-					<h3 class="sub_tit">행사 유형</h3>
-					<div class="cal_box">
-						<ul class="resort_list">
-							<li>
-								<input type="radio" id="ever_01" class="ip_hidden" name="chk_kind" />
-								<label for="ever_01" class="agree_text">에버랜드</label>
-							</li>
-							<li>
-								<input type="radio" id="ever_02" class="ip_hidden" name="chk_kind" />
-								<label for="ever_02" class="agree_text">에버랜드 + 체험학습</label>
-							</li>
-							<li>
-								<input type="radio" id="cabi_01" class="ip_hidden" name="chk_kind" />
-								<label for="cabi_01" class="agree_text">캐리비안 베이</label>
-							</li>
-							<li>
-								<input type="radio" id="cabi_02" class="ip_hidden" name="chk_kind" />
-								<label for="cabi_02" class="agree_text">캐리비안 베이 + 체험학습</label>
-							</li>
-						</ul>
-						<div id="datepicker" class="cal"></div>
-					</div>
-				</div>
-				<div class="cont_box">
-					<h3 class="sub_tit"><span>에버랜드</span>입원수 입력</h3>
-					<div class="mBoard">
-						<table>
-							<caption>신청 인원 입력항목</caption>
-							<colgroup>
-								<col width="60%">
-								<col width="40%">
-							</colgroup>
-							<thead>
-								<th scope="col">구분</th>
-								<th scope="col">신청인원</th>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="left">대인(추가인솔)</td>
-									<td><input type="text"> 명</td>
-								</tr>
-								<tr>
-									<td class="left">청소년(중/고등)</td>
-									<td><input type="text"> 명</td>
-								</tr>
-								<tr>
-									<td class="left">소인(초등)</td>
-									<td><input type="text"> 명</td>
-								</tr>
-								<tr>
-									<td class="left">대인(단체인원 15명부터 10명당 1명 적용)</td>
-									<td><input type="text"> 명</td>
-								</tr>
-								<tr>
-									<td class="left">기초생활수급자</td>
-									<td><input type="text"> 명</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td></td>
-									<td>총인원<strong></strong>명</td>
-								</tr>
-							</tfoot>
-						</table>
-					</div>
-				</div>
-				<div class="cont_box">
-					<h3 class="sub_tit"><span>에버랜드</span>인솔/보호자 정보입력</h3>
-					<div class="mBoard rs_table">
-						<table>
-							<caption>인솔/보호자 정보 입력</caption>
-							<colgroup>
-								<col width="20%" />
-								<col width="40%" />
-								<col width="40%" />
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col">이름</th>
-									<th scope="col">휴대폰</th>
-									<th scope="col">E-mail</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td><input type="text" class="gFull"></td>
-									<td><input type="text" class="gFull"></td>
-									<td><input type="text" class="gFull"></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="cont_box">
-				<!-- cb는 cb클래스 -->
-					<h3 class="sub_tit cb"><span>에버랜드</span>단체정보</h3>
+					<h3 class="sub_tit">숙박행사 단체정보</h3>
 					<div class="mBoard gBlock">
 						<table>
 							<caption>단체 정보 입력</caption>
@@ -278,14 +182,32 @@
 										</span>
 									</td>
 									<td>
-										<span class="bullet">지역</span>
-										<span class="select_box">
-											<label for="choice_loca">선택하세요</label>
-											<select id="choice_loca" class="select" title="지역선택">
+										<span class="bullet">행사예정일</span>
+										<span class="select_box shot">
+											<label for="choice_loca">2018</label>
+											<select id="choice_loca" class="select" title="년도선택">
 												<option selected="selected">선택하세요</option>
-												<option value="서울">서울</option>
-												<option value="경기">경기</option>
-												<option value="경남">경남</option>
+												<option value="2018">2018</option>
+												<option value="2019">2019</option>
+												<option value="2020">2020</option>
+											</select>
+										</span>
+										<span class="select_box shot">
+											<label for="choice_loca">1월</label>
+											<select id="choice_loca" class="select" title="월선택">
+												<option selected="selected">선택하세요</option>
+												<option value="1월">1월</option>
+												<option value="2월">2월</option>
+												<option value="3월">3월</option>
+											</select>
+										</span>
+										<span class="select_box shot">
+											<label for="choice_loca">1일</label>
+											<select id="choice_loca" class="select" title="일선택">
+												<option selected="selected">선택하세요</option>
+												<option value="1일">1일</option>
+												<option value="2일">2일</option>
+												<option value="3일">3일</option>
 											</select>
 										</span>
 									</td>
@@ -296,44 +218,15 @@
 										<input type="text" class="gLong" id="tag_name">
 									</td>
 									<td>
-										<span class="bullet">학년</span>
-										<span class="select_box">
-											<label for="choice_grade">선택하세요</label>
-											<select id="choice_grade" class="select" title="지역선택">
-												<option selected="selected">선택하세요</option>
-												<option value="1학년">1학년</option>
-												<option value="2학년">2학년</option>
-												<option value="3학년">3학년</option>
-											</select>
-										</span>
+										<span class="bullet">행사인원</span>
+										<input type="text" class="gLong" id="tag_name">
 									</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 				</div>
-				<div class="cont_box">
-					<h3 class="sub_tit cb"><span>캐리비안 베이+체험학습</span>단체정보</h3>
-					<div class="mBoard">
-						<table>
-							<caption>단체 정보 선택</caption>
-							<tbody>
-								<tr class="left">
-									<td>
-										<span><input type="checkbox" id="choice01" class="ip_hidden" />
-										<label for="choice01" class="agree_text">에버랜드 이용권 + 체험학습</label></span>
-										<span><input type="checkbox" id="choice02" class="ip_hidden" />
-										<label for="choice02" class="agree_text">단체식사</label></span>
-										<span><input type="checkbox" id="choice03" class="ip_hidden" />
-										<label for="choice03" class="agree_text">밀쿠폰(단체식권)</label></span>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<p class="table_sub">* 중복 선택이 가능합니다.</p>
-					</div>
-				</div>
-				<div class="btn_box"><a href="#none" class="next"><span>다음단계</span></a></div>
+				<div class="btn_box"><a href="#none" class="next"><span>상담예약하기</span></a></div>
 			</div>
 		</div>
 	</div>

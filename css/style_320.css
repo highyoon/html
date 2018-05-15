@@ -95,6 +95,7 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 #wrapCont .status {display:none;}
 
 #wrapCont .contents .title {margin-top:40px; font-size:1.7rem;}
+#wrapCont .contents .title.tit_box  {}
 .tab_menu {margin-top:30px;}
 #wrapCont .contents .top_box {margin-top:50px; padding:25px 62px;}
 #wrapCont .contents .top_box .txt {line-height:1.5; text-align:center; font-size:.9rem;}
@@ -129,6 +130,29 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 #wrapCont .cont_box .cal_box .cal {}
 
 #wrapCont .btn_box {margin-top:30px;}
+
+/* why에버랜드 */
+#wrapCont .list_box {}
+#wrapCont .list_box.col {}
+#wrapCont .list_box.col > div {}
+#wrapCont .list_box.col > div b {}
+#wrapCont .list_box.col > div > div {}
+#wrapCont .list_box.col > div > div > span {}
+#wrapCont .list_box.col .first {}
+#wrapCont .list_box.col .first:after {l}
+#wrapCont .safe_box {}
+#wrapCont .safe_box .col_2 {}
+#wrapCont .safe_box .col_2 .box {}
+#wrapCont .safe_box .col_2 .box .tit {}
+#wrapCont .safe_box .year_list {}
+#wrapCont .safe_box .year_list li {}
+#wrapCont .safe_box .year_list strong {}
+#wrapCont .safe_box .year_list span {}
+#wrapCont .safe_box .safe_list {}
+#wrapCont .safe_box .safe_list li {}
+#wrapCont .safe_box .safe_list li .thumb {}
+#wrapCont .safe_box .safe_list li > p {}
+#wrapCont .safe_box .safe_list li > p > span{}
 
 .innder_tab:after {display:block; content:''; clear:both;}
 .double_tab {border:0 none;}

@@ -32,7 +32,7 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 .main #wrapTop {position:fixed; top:0;}
 #wrapTop h1 {position:absolute; text-indent:-999em;}
 #wrapTop h1 a {display:block; height:100%;}
-#wrapTop .menuBox {position:absolute; font-family:'NanumSquareRound', sans-serif; font-weight:bold;}
+#wrapTop .menuBox {position:absolute; font-weight:bold;}
 #wrapTop .menuBox > ul {text-align:right;}
 #wrapTop .menuBox > ul > li {display:inline-block;}
 #wrapTop .menuBox > ul > li a {display:block; padding:0 25px;}
@@ -104,9 +104,6 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .contBox2 ul li > div {line-height:1;}
 #wrapCont .contBox2 ul li > div > span {display:block; font-family:'NanumSquareRound', sans-serif;}
 #wrapCont .contBox2 ul li > div > .bg_tuv {background-image:url('/img/common/bg_tuv.png'); background-repeat:no-repeat;}
-#wrapCont .contBox2 ul li .green {color:#aac22a;}
-#wrapCont .contBox2 ul li .orange {color:#fa9217;}
-#wrapCont .contBox2 ul li .sky {color:#297bae;}
 #wrapCont .contBox3 {}
 #wrapCont .contBox3 .bx_exper {overflow:hidden;}
 #wrapCont .contBox3 .bx_exper > div {float:left;}
@@ -144,11 +141,16 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 
 .btnTop {position:fixed; display:none; border:1px solid #dedede;}
 
+.green {color:#aac22a;}
+.orange {color:#fa9217;}
+.sky {color:#297bae;}
+
 /* sub ---------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* 담당자 안내 */
 #wrapCont .contents {}
-#wrapCont .contents .title {line-height:1.4; font-family:'NanumSquareRound', sans-serif; font-weight:400; text-align:center; letter-spacing:-1px;}
+#wrapCont .contents .title {line-height:1.4; font-weight:400; text-align:center; letter-spacing:-1px;}
+#wrapCont .contents .title.tit_box {border-bottom:1px solid #ff971c;}
 #wrapCont .contents .top_box {font-family:'NanumSquare', sans-serif; background-image:url('/img/officer/std_reserve.jpg'); background-size:100% auto; background-position:center; background-repeat:no-repeat; box-sizing:border-box;}
 #wrapCont .contents .top_box .txt {color:#fff;}
 #wrapCont .contents .top_box .normal {color:#fff; background:#ff8808;}
@@ -220,10 +222,48 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .agree_tit {font-weight:600;}
 #wrapCont .agree_scroll {overflow-y:auto; line-height:1.4; box-sizing:border-box; border:1px solid #dedede;}
 
+/* why에버랜드 */
+#wrapCont .list_box {}
+#wrapCont .list_box.col {overflow:hidden;}
+#wrapCont .list_box.col > div {position:relative; float:left; line-height:1.4; color:#222; box-sizing:border-box; border:1px solid #dedede;}
+#wrapCont .list_box.col > div b {display:block;}
+#wrapCont .list_box.col > div > div {position:absolute; line-height:1; font-weight:600;}
+#wrapCont .list_box.col > div > div > span {font-family: 'Montserrat', sans-serif;}
+#wrapCont .list_box.col .first {color:#fff; background:#ff971c; z-index:1;}
+#wrapCont .safe_box {overflow:hidden;}
+#wrapCont .safe_box .col_2 {border:1px solid #dedede; border-top:1px solid #ff971c;}
+#wrapCont .safe_box .col_2 .box .tit {font-family:'NanumSquare', sans-serif; font-weight:600;}
+#wrapCont .safe_box .col_2 .box .tit:after {display:block; content:''; background:#dedede;}
+#wrapCont .safe_box .year_list {}
+#wrapCont .safe_box .year_list li {position:relative; z-index:2;}
+#wrapCont .safe_box .year_list strong {display:inline-block; vertical-align:top; background-repeat:no-repeat; background-position:0 center;}
+#wrapCont .safe_box .year_list span {position:relative; display:inline-block; vertical-align:top; box-sizing:border-box;}
+#wrapCont .safe_box .year_list span:after {position:absolute; left:0; display:block; content:''; background:#dedede;}
+#wrapCont .safe_box .safe_list {}
+#wrapCont .safe_box .safe_list li {position:relative;}
+#wrapCont .safe_box .safe_list li .thumb {position:absolute;}
+#wrapCont .safe_box .safe_list li .thumb img {width:100%;}
+#wrapCont .safe_box .safe_list li > p {}
+#wrapCont .safe_box .safe_list li > p > span{display:block; font-weight:600;}
+
 .gWrap {overflow:hidden;}
 .gLeft {float:left;}
 .gRight {float:right;}
 
+/* autocomplete */
+.ui-autocomplete {border:1px solid #eaeaea; background:#fff; z-index:11;}
+.ui-autocomplete li {}
+.ui-autocomplete li:hover {cursor:pointer; background:#f9f9f9;}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
 /* 셀렉트 박스 */
 .select_box {position:relative; vertical-align:top; border:1px solid #d7dae1; box-sizing:border-box; background-image:url('/img/common/ico_select.gif'); background-repeat:no-repeat; background-position:100% center;}
 .sort.etc .select_box {}
@@ -282,8 +322,8 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 .ui-datepicker td {font-size:12px; font-weight:300; text-align:center;}
 .ui-datepicker td a {display:block; padding:.7em; font-size:.8rem; text-decoration:none;}
 /*.ui-state-highlight {color:#fff; background:#fa8508; border-radius:50%;}*/
-.ui-state-active {color:#fff; background:#fa8508; border-radius:50%;}
-.ui-state-active:hover {color:#fff;}
+td .ui-state-active {color:#fff; background:#fa8508; border-radius:50%;}
+td .ui-state-active:hover {color:#fff;}
 .ui-datepicker-calendar > thead th:first-child span, .ui-datepicker-calendar > tbody td:first-child a {color:#f00;}
 .ui-datepicker-calendar > thead th:last-child span, .ui-datepicker-calendar > tbody td:last-child a {color:blue;}
 
