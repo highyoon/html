@@ -138,6 +138,13 @@ $(document).ready(function(){
 		}
 	});
 
+	//셀렉트 박스 디자인 입힌거 
+	var select = $("select.select");
+	select.change(function(){
+		var select_name = $(this).children("option:selected").text();
+		$(this).siblings("label").text(select_name);
+	});
+
 	//menu
 	$('.menuBox li a').hover(function(){
 		$(this).parent().siblings().find('.depth2').hide();

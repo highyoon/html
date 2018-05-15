@@ -163,15 +163,25 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 
 .btnTop { display:none; right:15px; bottom:103px; width:43px; height:43px;}
 
+/* 셀렉트 박스 */
+.select_box {position:relative; width:auto; height:36px; background-size:35px 34px;}
+.sort.etc .select_box {}
+.select_box label {font-size:14px; top:6px; left:9px;}
+.select_box select {width:100%; height:32px; min-height:32px; line-height: 32px; padding:0 50px 0 10px;}
+
+
 /* table */
 .mBoard .rwd-table th {display:none;}
 .mBoard .rwd-table tr {display:block; }
 .mBoard .rwd-table td {display:block; position:relative; padding:8px; padding-left:36%; height:34px;}
 .mBoard .rwd-table td:before {position:absolute; top:0; left:0; width:30%; height:50px; line-height:50px; padding-left:10px; border-right:1px solid #dedede; white-space:nowrap; content: attr(data-th) ": "; text-align:left; background:#f8f8f8;}
+.mBoard td .bullet {padding-left:12px; width:100px; font-size:.9rem; font-weight:600;}
 .mBoard .table_sub {}
 .mBoard th, .mBoard td {padding:12px;}
 .mBoard.gScroll {overflow-x:scroll;}
 .mBoard.gScroll table {width:1170px;}
+.mBoard.gBlock td, .mBoard.gBlock tr {display:block;}
+.mBoard .select_box {}
 
 /* 반응형 테이블 */
 .mBoard.rs_table table,.mBoard.rs_table thead, .mBoard.rs_table tbody,

@@ -195,17 +195,26 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .ui-datepicker th  {padding:.8em;}
 .ui-datepicker td a {margin:0 .9rem;}
 
+/* 셀렉트 박스 */
+.select_box {margin-right:5px; width:180px; height:35px; background-size:35px 34px;}
+.sort.etc .select_box {width:290px;}
+.select_box label {font-size:14px; top:6px; left:9px;}
+.select_box select {width:100%; height:32px; min-height:32px; line-height: 32px; padding:0 50px 0 10px;}
+
+
 /* table */
 .mBoard {}
 .mBoard table {}
-.mBoard th {padding:15px 0;}
+.mBoard th {padding:15px 0; font-size:17px;}
 .mBoard td {padding:15px 15px;}
 .mBoard td input {padding:10px; height:32px;}
 .mBoard td .half li {float:left; width:50%;}
 .mBoard td .bullet {padding-left:12px; width:100px; font-size:17px; font-weight:600;}
+.mBoard td .gLong {width:219px;}
 .mBoard .agree_text {margin-right:75px; padding-left:30px;}
 .mBoard .last {border-right:0 none;}
 .mBoard .table_sub {margin-top:20px; font-size:14px;}
+.mBoard .select_box {width:219px; }
 
 /* tab_menu */
 .tab_menu {margin-top:40px;}

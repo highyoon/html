@@ -224,6 +224,13 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 .gLeft {float:left;}
 .gRight {float:right;}
 
+/* 셀렉트 박스 */
+.select_box {position:relative; vertical-align:top; border:1px solid #d7dae1; box-sizing:border-box; background-image:url('/img/common/ico_select.gif'); background-repeat:no-repeat; background-position:100% center;}
+.sort.etc .select_box {}
+.select_box label {position: absolute; font-weight:300; color:#666; letter-spacing:1px;}
+.select_box select {opacity: 0;filter: alpha(opacity=0);box-sizing:border-box;}
+
+
 /* table */
 .mBoard {}
 .mBoard table {width:100%; border-top:1px solid #ff971c; border-left:1px solid #dedede;}
@@ -237,6 +244,7 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 .mBoard tfoot {background:#f8f8f8;}
 .mBoard tfoot td {border-bottom:1px solid #ff971c;}
 .mBoard .table_sub {color:#666;}
+.mBoard .select_box {display:inline-block; vertical-align:middle;}
 
 /* tab_menu */
 .tab_menu {overflow:hidden;}
