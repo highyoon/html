@@ -246,6 +246,42 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .safe_box .safe_list li > p {}
 #wrapCont .safe_box .safe_list li > p > span{display:block; font-weight:600;}
 
+/* 체험학습 프로그램 */
+#wrapCont .exper_navi {}
+#wrapCont .exper_navi.fix {position:fixed; top:0; background:#fff; z-index:5;}
+#wrapCont .exper_navi ul {overflow:hidden;}
+#wrapCont .exper_navi li {float:left; text-align:center;}
+#wrapCont .exper_navi li .thumb > span {background-image:url('/img/common/navi_exper.png'); background-repeat:no-repeat;}
+#wrapCont .exper_navi li .job {}
+#wrapCont .exper_navi li .safe {}
+#wrapCont .exper_navi li .emotion {}
+#wrapCont .exper_navi li .history {}
+
+#wrapCont .program_list {overflow:hidden;}
+#wrapCont .program_list li {position:relative; float:left; text-align:center; box-sizing:border-box;}
+#wrapCont .program_list .first {position:relative; color:#fff; background-repeat:no-repeat; background-size:cover; background-position:center top;}
+#wrapCont #job_exper .first {background-image:url('/img/program/bg_job.jpg');}
+#wrapCont #safe_exper .first {background-image:url('/img/program/bg_safe.jpg');}
+#wrapCont #emotion_exper .first {background-image:url('/img/program/bg_emotion.jpg');}
+#wrapCont #history_exper .first {background-image:url('/img/program/bg_history.jpg');}
+#wrapCont .program_list .first .box_tit {font-weight:500;}
+#wrapCont .program_list .first .box_tit:after {display:block; content:''; background:rgba(255,255,255,.7);}
+#wrapCont .program_list .first .box_txt {position:absolute; line-height:1.6;}
+#wrapCont .program_list li .thumb {}
+#wrapCont .program_list li .ex_tit {font-family:'NanumSquare', sans-serif; font-weight:600;}
+#wrapCont .program_list li .ex_txt {}
+#wrapCont .program_list li .ex_info {}
+#wrapCont .program_list li .tag {margin:0 -3px;}
+#wrapCont .program_list li .tag > span {display:inline-block; margin:3px; background:#ededed;}
+#wrapCont .program_list li .dl_button {position:absolute;}
+#wrapCont .program_list li .dl_button a {display:inline-block; font-weight:600; border-bottom:solid; border-width:1px;}
+#wrapCont .program_list li .dl_button a > span {background-repeat:no-repeat;}
+#wrapCont #job_exper .dl_button a {color:#74c7f2; border-color:#74c7f2;}
+#wrapCont #safe_exper .dl_button a {color:#9fa951; border-color:#9fa951;}
+#wrapCont #emotion_exper .dl_button a {color:#f78b38; border-color:#f78b38;}
+#wrapCont #history_exper .dl_button a {color:#885ebb; border-color:#885ebb;}
+#wrapCont .program_list li .total_btn {}
+
 .gWrap {overflow:hidden;}
 .gLeft {float:left;}
 .gRight {float:right;}
@@ -294,6 +330,7 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 .tab_menu li a:first-child {border-bottom:1px solid #ff971c;}
 .tab_menu li.on a {border:solid #ff971c; width:calc(100% - 2px);  border-width:1px 1px 0 1px; background:#fff;}
 .tab_menu.col_3 li {width:calc(33.333% - 1px);}
+.tab_menu.col_2 li {width:calc(50% - 1px);}
 
 /* input */
 .ip_hidden {position:absolute; top:50%; right:1px; width:22px; height:22px; margin-top:-11px; opacity:0; outline:0; -webkit-appearance:none; z-index:9;}

@@ -8,7 +8,7 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		winWidth = $(window).width();
 		if( winWidth>checkWidth ){
-			box_roll();
+			//box_roll();
 		} else {
 			
 		}
@@ -191,7 +191,23 @@ $(document).ready(function(){
 			$('#topSearch').hide().removeClass('active');
 		}, 150);
 	});
+	
+	/* 탭 상단 고정 */
+	function FixedTab() {
+		var fixedTab = $('.exper_navi').offset();
+		$( window ).scroll( function() {
+		  if ( $( document ).scrollTop() > fixedTab.top) {
+			$('.exper_navi').addClass("fix");
+			$('#job_exper').css("margin-top","150px;")
+		  }
+		  else {
+			$('.exper_navi').removeClass("fix");
+		  } 
 
+		});
+		
+	}
+	 FixedTab() ;
 	//mainVisual
     $(".location>li").click(function(){
         clearTimeout(rolling);
@@ -367,6 +383,7 @@ $(document).ready(function(){
 	//scroll
     $(window).scroll(function(e){
 		var nowPos = $(window).scrollTop();
+		var fixedTab = $('.exper_navi').offset();
 		
 		if( winWidth>checkWidth ){
 			if( nowPos<=250 ){
@@ -382,23 +399,10 @@ $(document).ready(function(){
 
 			}
 			if( nowPos>=pos2 ){
-				$('.contBox2 h2').animate({"opacity":"1"}, 1350, 'easeInOutSine');
-				$('.contBox2 .stock').animate({"left":"0", "opacity":"1"}, 750, 'easeOutCirc');
-				$('.contBox2 .info1').delay(250).animate({"top":"40px", "opacity":"1"}, 500, 'easeInOutSine');
-				$('.contBox2 .info2').delay(700).animate({"top":"110px","opacity":"1"}, 450, 'easeOutCirc');
-				$('.contBox2 .about').delay(950).animate({"opacity":"1"}, 450, 'easeOutCirc');
-				$('.contBox2 .cont1').delay(850).animate({"height":"121px", "opacity":"1"}, 750, 'easeOutSine');
-				$('.contBox2 .cont2').delay(900).animate({"height":"121px", "opacity":"1"}, 750, 'easeOutSine');
-				$('.contBox2 .cont3').delay(950).animate({"height":"121px", "opacity":"1"}, 750, 'easeOutSine');
-				$('.contBox2 .item3').delay(850).animate({"height":"168px"}, 450, 'easeOutCirc');
-				$('.contBox2 .item4').delay(950).animate({"height":"168px"}, 450, 'easeOutCirc');
-				$('.contBox2 .item5').delay(1050).animate({"height":"168px"}, 450, 'easeOutCirc');
+				
 			}
 			if( nowPos>=pos3 ){
-				$('.contBox3 h2').animate({"opacity":"1"}, 1350, 'easeInOutSine');
-				$('.contBox3 .people').delay(350).animate({"margin-top":"0", "opacity":"1"}, 650, 'easeOutCirc');
-				$('.contBox3 .news').delay(400).animate({"margin-top":"0", "opacity":"1"}, 650, 'easeOutCirc');
-				$('.contBox3 .glance').delay(450).animate({"margin-top":"0", "opacity":"1"}, 650, 'easeOutCirc');
+				
 			}
 
 		} else {

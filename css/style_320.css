@@ -154,6 +154,32 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 #wrapCont .safe_box .safe_list li > p {}
 #wrapCont .safe_box .safe_list li > p > span{}
 
+/* 체험학습 프로그램 */
+#wrapCont .exper_navi {}
+#wrapCont .exper_navi ul {}
+#wrapCont .exper_navi li {}
+#wrapCont .exper_navi li .thumb {}
+#wrapCont .exper_navi li .job {}
+#wrapCont .exper_navi li .safe {}
+#wrapCont .exper_navi li .emotion {}
+#wrapCont .exper_navi li .history {}
+
+#wrapCont .program_list {}
+#wrapCont .program_list li {}
+#wrapCont .program_list .first {}
+#wrapCont .program_list #job_exper .first {}
+#wrapCont .program_list #safe_exper .first {}
+#wrapCont .program_list #emotion_exper .first {}
+#wrapCont .program_list #history_exper .first {}
+#wrapCont .program_list .first .box_tit {}
+#wrapCont .program_list .first .box_txt {}
+#wrapCont .program_list li .thumb {}
+#wrapCont .program_list li .ex_tit {}
+#wrapCont .program_list li .ex_txt {}
+#wrapCont .program_list li .ex_info {}
+#wrapCont .program_list li .tag {}
+#wrapCont .program_list li .total_btn {}
+
 .innder_tab:after {display:block; content:''; clear:both;}
 .double_tab {border:0 none;}
 .double_tab .col_2 a {padding:15px 0;}

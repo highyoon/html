@@ -211,6 +211,43 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .safe_box .safe_list li > p {line-height:1.6;}
 #wrapCont .safe_box .safe_list li > p > span {font-size:15px;;}
 
+/* 체험학습 프로그램 */
+#wrapCont .exper_navi {}
+#wrapCont .exper_navi.fix {width:1170px;}
+#wrapCont .exper_navi ul {margin-top:70px;}
+#wrapCont .exper_navi.fix ul {margin-top:0; border:1px solid #dedede; border-right:0 none;} 
+#wrapCont .exper_navi li {width:25%;}
+#wrapCont .exper_navi.fix li {width:calc(25% - 1px); height:58px; line-height:58px; border-right:1px solid #dedede;}
+#wrapCont .exper_navi li .thumb {margin:0 auto 15px; width:94px; height:94px; border:1px solid #dedede; border-radius:50%;}
+#wrapCont .exper_navi.fix li .thumb {display:inline-block; width:25px; height:25px; border:0 none;}
+#wrapCont .exper_navi li .thumb > span {display:inline-block; margin-top:23px; width:50px; height:50px;}
+#wrapCont .exper_navi.fix li .thumb > span {display:inline-block; margin-top:13px; width:25px; height:25px; background-size:100px 25px;}
+#wrapCont .exper_navi li .job {background-position:0 0;}
+#wrapCont .exper_navi li .safe {background-position:-50px 0;}
+#wrapCont .exper_navi li .emotion {background-position:-100px 0;}
+#wrapCont .exper_navi li .history {background-position:-150px 0;}
+
+#wrapCont .program_list {margin:100px -15px 0;}
+#wrapCont .program_list li {margin:15px; width:calc(25% - 30px); height:424px;}
+#wrapCont .program_list .first {padding:40px; text-align:left;}
+#wrapCont .program_list #job_exper .first {}
+#wrapCont .program_list #safe_exper .first {}
+#wrapCont .program_list #emotion_exper .first {}
+#wrapCont .program_list #history_exper .first {}
+#wrapCont .program_list .first .box_tit {font-size:22px;}
+#wrapCont .program_list .first .box_tit:after {margin-top:20px; width:28px; height:1px;}
+#wrapCont .program_list .first .box_txt {bottom:40px; width:170px; font-size:17px;}
+#wrapCont .program_list li .thumb {}
+#wrapCont .program_list li .ex_tit {margin:20px 0; font-size:20px;}
+#wrapCont .program_list li .ex_txt {font-size:14px;}
+#wrapCont .program_list li .ex_info {margin-top:25px;}
+#wrapCont .program_list li .tag {margin-top:10px;}
+#wrapCont .program_list li .tag > span {padding:4px;}
+#wrapCont .program_list li .dl_button {bottom:0; width:100%; text-align:center;}
+#wrapCont .program_list li .dl_button a {padding-bottom:6px; font-size:14px;}
+#wrapCont .program_list li .dl_button a > span {padding-right:90px;}
+#wrapCont .program_list li .total_btn {}
+
 .double_tab {height:50px;}
 .double_tab .col_2 {height:50px; line-height:50px;}
 .double_tab .col_2 a {font-size:17px;}
