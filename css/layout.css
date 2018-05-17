@@ -247,6 +247,15 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .safe_box .safe_list li > p > span{display:block; font-weight:600;}
 
 /* 체험학습 프로그램 */
+#wrapCont .tab_box {}
+#wrapCont .tab_box .menu {overflow:hidden; border:1px solid #dedede; border-right:0 none;}
+#wrapCont .tab_box .menu li {float:left; text-align:center; width:calc(25% - 1px); border-right:1px solid #dedede;}
+#wrapCont .tab_box .menu li a {display:block;}
+#wrapCont .tab_box .menu li.active a {color:#fff; background:#ff971c;}
+#wrapCont .tab_cont {}
+#wrapCont .tab_cont > div {display:none;}
+#wrapCont .tab_cont > div.active {display:block;}
+
 #wrapCont .exper_navi {}
 #wrapCont .exper_navi.fix {position:fixed; top:0; background:#fff; z-index:5;}
 #wrapCont .exper_navi ul {overflow:hidden;}
@@ -258,7 +267,7 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .exper_navi li .history {}
 
 #wrapCont .program_list {overflow:hidden;}
-#wrapCont .program_list li {position:relative; float:left; text-align:center; box-sizing:border-box;}
+#wrapCont .program_list > li {position:relative; float:left; text-align:center; box-sizing:border-box;}
 #wrapCont .program_list .first {position:relative; color:#fff; background-repeat:no-repeat; background-size:cover; background-position:center top;}
 #wrapCont #job_exper .first {background-image:url('/img/program/bg_job.jpg');}
 #wrapCont #safe_exper .first {background-image:url('/img/program/bg_safe.jpg');}
@@ -275,12 +284,23 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .program_list li .tag > span {display:inline-block; margin:3px; background:#ededed;}
 #wrapCont .program_list li .dl_button {position:absolute;}
 #wrapCont .program_list li .dl_button a {display:inline-block; font-weight:600; border-bottom:solid; border-width:1px;}
-#wrapCont .program_list li .dl_button a > span {background-repeat:no-repeat;}
+#wrapCont .program_list li .dl_button a > span {background-repeat:no-repeat; background-position:center right;}
 #wrapCont #job_exper .dl_button a {color:#74c7f2; border-color:#74c7f2;}
 #wrapCont #safe_exper .dl_button a {color:#9fa951; border-color:#9fa951;}
 #wrapCont #emotion_exper .dl_button a {color:#f78b38; border-color:#f78b38;}
 #wrapCont #history_exper .dl_button a {color:#885ebb; border-color:#885ebb;}
-#wrapCont .program_list li .total_btn {}
+#wrapCont .program_list li .total_btn {z-index:10;}
+#wrapCont .program_list li .total_btn dl {color:#fff;}
+#wrapCont .program_list li .total_btn dt {background:#3a3b3d;}
+#wrapCont .program_list li .total_btn dd {background:#4f4f4f;}
+#wrapCont .program_list li .total_btn dd a {display:inline-block; width:calc(33.333% - 1px); color:#fff; border-right:1px solid #3f4141;}
+#wrapCont .program_list li .total_btn dd li {}
+
+/* 행사관련 서류 */
+#wrapCont .file_box {border-top:1px solid #ff971c; border-bottom:1px solid #ff971c;}
+#wrapCont .file_box .file_top {background:#f8f8f8;}
+#wrapCont .file_box ul {overflow:hidden;}
+#wrapCont .file_box ul li {border-top:1px solid #dedede; box-sizing:border-box;}
 
 .gWrap {overflow:hidden;}
 .gLeft {float:left;}
@@ -314,6 +334,7 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 .mBoard .left td, .mBoard td.left  {text-align:left;} 
 .mBoard td {text-align:center; border-right:1px solid #dedede; border-bottom:1px solid #dedede;}
 .mBoard td input {box-sizing:border-box; border:1px solid #e1e1e1;}
+.mBoard td a {display:block; text-align:left;}
 .mBoard td .half {overflow:hidden;}
 .mBoard td .half li {box-sizing:border-box;}
 .mBoard td .bullet {display:inline-block;}

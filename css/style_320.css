@@ -155,6 +155,12 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 #wrapCont .safe_box .safe_list li > p > span{}
 
 /* 체험학습 프로그램 */
+#wrapCont .tab_box {}
+#wrapCont .tab_box .menu {}
+#wrapCont .tab_box .menu li {}
+#wrapCont .tab_box .menu li a {}
+#wrapCont .tab_cont {}
+
 #wrapCont .exper_navi {}
 #wrapCont .exper_navi ul {}
 #wrapCont .exper_navi li {}
@@ -165,7 +171,7 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 #wrapCont .exper_navi li .history {}
 
 #wrapCont .program_list {}
-#wrapCont .program_list li {}
+#wrapCont .program_list > li {}
 #wrapCont .program_list .first {}
 #wrapCont .program_list #job_exper .first {}
 #wrapCont .program_list #safe_exper .first {}
@@ -179,6 +185,13 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 #wrapCont .program_list li .ex_info {}
 #wrapCont .program_list li .tag {}
 #wrapCont .program_list li .total_btn {}
+
+/* 행사관련 서류 */
+#wrapCont .file_box {}
+#wrapCont .file_box .file_top {}
+#wrapCont .file_box ul {}
+#wrapCont .file_box ul li {}
+#wrapCont .file_box ul li:last-child {border-top:0 none;}
 
 .innder_tab:after {display:block; content:''; clear:both;}
 .double_tab {border:0 none;}

@@ -207,7 +207,20 @@ $(document).ready(function(){
 		});
 		
 	}
-	 FixedTab() ;
+	FixedTab();
+
+	/* [s] 탭메뉴*/
+	$('.tab_box').on('click', '.menu a', function(e){
+		var $parent = $(this).parent();
+		var _index = $parent.index();
+		var $cont = $('.section').find('.tab_cont > div').eq(_index);
+		e.preventDefault();
+
+		$parent.add($cont).addClass('active').siblings().removeClass('active');
+		$('.menu li.active').prev().addClass('no');
+	}).find('.menu a').eq(0).trigger('click');
+	/* [e] 탭메뉴*/
+
 	//mainVisual
     $(".location>li").click(function(){
         clearTimeout(rolling);
@@ -272,10 +285,10 @@ $(document).ready(function(){
 		});
 		//scroll indicator
 		$(function(){
-			var pageInner = $('#wrapTop').offset().top;
-			var pageInner2 = $('.contBox1').offset().top;
-			var pageInner3 = $('.contBox2').offset().top;
-			var pageInner4 = $('.contBox3').offset().top;
+			//var pageInner = $('#wrapTop').offset().top;
+			//var pageInner2 = $('.contBox1').offset().top;
+			//var pageInner3 = $('.contBox2').offset().top;
+			//var pageInner4 = $('.contBox3').offset().top;
 			
 
 			$(window).scroll(function(){
@@ -359,27 +372,7 @@ $(document).ready(function(){
 		$('.contBox1 .box2').delay(350).animate({"margin-top":"20px", "opacity":"1"}, 750, 'easeOutCubic');
 		$('.contBox1 .products').delay(350).animate({"margin-top":"-127px", "opacity":"1"}, 750, 'easeOutCubic');
 	}
-	/* [s] 탭메뉴*/
-	$('.year_tap').on('click', '.menu a', function(e){
-		var $parent = $(this).parent();
-		var _index = $parent.index();
-		var $cont = $('.content').find('.history > div').eq(_index);
-		e.preventDefault();
-
-		$parent.add($cont).addClass('active').siblings().removeClass('active');
-		$('.menu li.active').prev().addClass('no');
-	}).find('.menu a').eq(0).trigger('click');
-	/* [e] 탭메뉴*/
-	$('.tab_menu').on('click', '.menu a', function(e){
-		var $parent = $(this).parent();
-		var _index = $parent.index();
-		var $cont = $('.content').find('.tap_cont > div').eq(_index);
-		e.preventDefault();
-
-		$parent.add($cont).addClass('on').siblings().removeClass('on');
-		$('.menu li.active').prev().addClass('no');
-	}).find('.menu a').eq(0).trigger('click');
-
+	
 	//scroll
     $(window).scroll(function(e){
 		var nowPos = $(window).scrollTop();
