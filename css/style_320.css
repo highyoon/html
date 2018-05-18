@@ -186,6 +186,14 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 #wrapCont .program_list li .tag {}
 #wrapCont .program_list li .total_btn {}
 
+/* 이용안내 */
+#wrapCont .inner_box {}
+#wrapCont .inner_wrap {}
+#wrapCont .inner_wrap .inner_tit {}
+#wrapCont .inner_wrap ul {}
+#wrapCont .inner_wrap ul li {}
+#wrapCont .inner_wrap .thumb {}
+
 /* 행사관련 서류 */
 #wrapCont .file_box {}
 #wrapCont .file_box .file_top {}

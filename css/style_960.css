@@ -184,6 +184,7 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .agree_box .agchk label {margin-left:15px;}
 #wrapCont .agree_box .agchk.sec {top:496px;}
 #wrapCont .btn_box {margin-top:50px;}
+#wrapCont .btn_box.left {margin-top:20px; text-align:left;}
 
 /* why에버랜드 */
 #wrapCont .list_box {}
@@ -262,6 +263,14 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .program_list li .total_btn dd {}
 #wrapCont .program_list li .total_btn dd a {padding:14px 0;}
 #wrapCont .program_list li .total_btn dd li {}
+
+/* 이용안내 */
+#wrapCont .inner_box {margin-bottom:70px; padding:40px;}
+#wrapCont .inner_wrap {}
+#wrapCont .inner_wrap .inner_tit {font-size:17px;}
+#wrapCont .inner_wrap ul {}
+#wrapCont .inner_wrap ul li {font-size:15px;}
+#wrapCont .inner_wrap .thumb {position:absolute; top:0; right:0;}
 
 /* 행사관련 서류 */
 #wrapCont .file_box {}

@@ -136,7 +136,7 @@ $(document).ready(function(){
 		});
 	 });
 
-	 $('.exper_box .agree_text').click(function(){
+	 $('.btn_box .next.time').click(function(){
 		$('.popup').fadeIn(200);
 		$('#maskPC').fadeIn(200);
 	});
