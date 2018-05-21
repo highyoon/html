@@ -186,13 +186,31 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 #wrapCont .program_list li .tag {}
 #wrapCont .program_list li .total_btn {}
 
+/* 숙박형 체험안내 */
+#wrapCont .stay_box {}
+#wrapCont .stay_list {}
+#wrapCont .stay_list > p {}
+#wrapCont .stay_list > dl {}
+#wrapCont .stay_list > dl {}
+#wrapCont .stay_list > dl dt {}
+#wrapCont .stay_list > dl dd {}
+#wrapCont .stay_list > dl dd > span {}
+
 /* 이용안내 */
 #wrapCont .inner_box {}
 #wrapCont .inner_wrap {}
 #wrapCont .inner_wrap .inner_tit {}
 #wrapCont .inner_wrap ul {}
 #wrapCont .inner_wrap ul li {}
+#wrapCont .inner_wrap .step {}
+#wrapCont .inner_wrap .step > li {}
+#wrapCont .inner_wrap .step .step_txt {}
+#wrapCont .inner_wrap .step .step_txt > span {}
 #wrapCont .inner_wrap .thumb {}
+#wrapCont .guide_box {}
+#wrapCont .guide_box > h3 {}
+#wrapCont .guide_box > p {}
+#wrapCont .guide_box .btn_box {}
 
 /* 행사관련 서류 */
 #wrapCont .file_box {}
@@ -240,6 +258,8 @@ body, form, input, select, textarea, button { font-size:0.8em; line-height:1em; 
 .select_box label {font-size:14px; top:6px; left:9px;}
 .select_box select {width:100%; height:32px; min-height:32px; line-height: 32px; padding:0 50px 0 10px;}
 
+/* bullet style */
+.bullet_list {}
 
 /* table */
 .mBoard .rwd-table th {display:none;}

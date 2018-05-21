@@ -264,13 +264,36 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .program_list li .total_btn dd a {padding:14px 0;}
 #wrapCont .program_list li .total_btn dd li {}
 
+/* 숙박형 체험안내 */
+#wrapCont .stay_box {}
+#wrapCont .stay_list {margin:30px 0; border:1px solid #dedede;}
+#wrapCont .stay_list > dl {}
+#wrapCont .stay_list > dl dt {top:0; left:0; padding:30px 0; width:130px; font-size:15px;}
+#wrapCont .two .stay_list > dl dt {height:83px; line-height:83px;}
+#wrapCont .stay_list > dl dt > strong {font-size:17px;}
+#wrapCont .stay_list > dl dd {padding:30px 30px 30px 170px;}
+#wrapCont .stay_list > dl dd li {padding-left:58px; background-image:url('/img/common/bg_days.png');}
+#wrapCont .stay_list > dl dd li:first-child {}
+#wrapCont .stay_list > dl dd li > strong {font-size:17px;}
+#wrapCont .stay_list > dl dd li > span {padding-right:26px; background:url('/img/common/day_arrow.png') no-repeat 98% 4px;}
+#wrapCont .stay_list > dl dd li > span:last-child {padding:0; background:none;}
+
 /* 이용안내 */
 #wrapCont .inner_box {margin-bottom:70px; padding:40px;}
-#wrapCont .inner_wrap {}
+#wrapCont .inner_wrap.stay {height:220px;}
 #wrapCont .inner_wrap .inner_tit {font-size:17px;}
-#wrapCont .inner_wrap ul {}
-#wrapCont .inner_wrap ul li {font-size:15px;}
+#wrapCont .inner_wrap ul {margin:20px 0 40px;}
+#wrapCont .inner_wrap ul li {margin:7px 0; font-size:15px;}
+#wrapCont .inner_wrap .step {margin:0 -20px;}
+#wrapCont .inner_wrap .step > li {margin:20px; width:calc(33.333% - 40px);}
+#wrapCont .inner_wrap .step .step_txt {font-size:17px;}
+#wrapCont .inner_wrap .step .step_txt > span {margin-right:12px; width:33px; height:33px; line-height:34px; font-size:15px;}
 #wrapCont .inner_wrap .thumb {position:absolute; top:0; right:0;}
+#wrapCont .guide_box {padding:43px 50px; background-image:url('/img/common/bg_guide.jpg'); background-position:right top;}
+#wrapCont .guide_box > h3 {font-size:35px;}
+#wrapCont .guide_box > p {font-size:15px;}
+#wrapCont .guide_box .btn_box {}
+#wrapCont .guide_box .btn_box a {padding:10px 28px;}
 
 /* 행사관련 서류 */
 #wrapCont .file_box {}
@@ -294,6 +317,9 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .select_box label {font-size:14px; top:6px; left:9px;}
 .select_box select {width:100%; height:32px; min-height:32px; line-height: 32px; padding:0 50px 0 10px;}
 
+/* bullet style */
+.bullet_list {padding-left:14px;}
+.bullet_list:after {top:7px; left:0; width:3px; height:3px;}
 
 /* table */
 .mBoard {}
@@ -355,6 +381,7 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .btn_box .view > span {padding-right:20px; font-size:15px; background-position:center right;}
 .btn_box .next {padding:10px 25px;}
 .btn_box .next span {padding-right:50px; font-size:15px; background-position:center right;}
+.btn_box .normal span {padding-right:20px; font-size:15px; background-position:center right;}
 
 /* 이미지형 아이콘 */
 a.btn_ico, button.btn_ico, span.btn_ico {background-image:url('/img/common/sp_icon.png'); background-repeat:no-repeat;}
