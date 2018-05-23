@@ -110,7 +110,7 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .contBox3 .bx_exper > div > h3 {font-family:'NanumSquare', sans-serif; text-align:center; color:#fff;}
 #wrapCont .contBox3 .bx_exper > div > ul {}
 #wrapCont .contBox3 .bx_exper > div > ul li {box-sizing:border-box;}
-#wrapCont .contBox3 .bx_exper > div > ul li:last-child {border:0 none;}
+#wrapCont .contBox3 .bx_exper > div > ul li:last-child {border:0 none; min-height:auto;}
 #wrapCont .contBox3 .bx_exper > div > ul li a {position:relative; display:block;}
 #wrapCont .contBox3 .bx_exper .exper_tit {}
 #wrapCont .contBox3 .bx_exper p {line-height:1.6; color:#222;}
@@ -266,7 +266,8 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .exper_navi li .emotion {}
 #wrapCont .exper_navi li .history {}
 
-#wrapCont .program_list {overflow:hidden;}
+#wrapCont .program_list {}
+#wrapCont .program_list:after {display:block; content:''; clear:both;}
 #wrapCont .program_list > li {position:relative; float:left; text-align:center; box-sizing:border-box;}
 #wrapCont .program_list .first {position:relative; color:#fff; background-repeat:no-repeat; background-size:cover; background-position:center top;}
 #wrapCont #job_exper .first {background-image:url('/img/program/bg_job.jpg');}
@@ -289,15 +290,21 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont #safe_exper .dl_button a {color:#9fa951; border-color:#9fa951;}
 #wrapCont #emotion_exper .dl_button a {color:#f78b38; border-color:#f78b38;}
 #wrapCont #history_exper .dl_button a {color:#885ebb; border-color:#885ebb;}
-#wrapCont .program_list li .total_btn {z-index:10;}
+#wrapCont .program_list li .total_btn {display:none; z-index:10;}
+#wrapCont .program_list li .total_btn.on {display:block;}
 #wrapCont .program_list li .total_btn dl {color:#fff;}
 #wrapCont .program_list li .total_btn dt {background:#3a3b3d;}
 #wrapCont .program_list li .total_btn dd {background:#4f4f4f;}
 #wrapCont .program_list li .total_btn dd a {display:inline-block; width:calc(33.333% - 1px); color:#fff; border-right:1px solid #3f4141;}
 #wrapCont .program_list li .total_btn dd li {}
+#wrapCont .program_list li .total_btn .workbook {background:#3a3b3d;}
+#wrapCont .program_list li .total_btn .workbook a {color:#fff;}
 
 /* 숙박형 체험안내 */
 #wrapCont .stay_box {}
+#wrapCont .exper_navi.day {text-align:center;}
+#wrapCont .exper_navi.day ul li {float:none; display:inline-block;}
+#wrapCont .exper_navi.day li .thumb > span {background-image:url('/img/common/navi_day.png'); background-repeat:no-repeat;}
 #wrapCont .stay_list {}
 #wrapCont .stay_list > dl {position:relative; font-family:'NanumSquare', sans-serif;}
 #wrapCont .stay_list > dl dt {position:absolute; display:inline-block; line-height:1.4; text-align:center; color:#fff; background:#ff971c;}
@@ -365,10 +372,12 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 
 /* table */
 .mBoard {}
+.mBoard.resort tbody {border-bottom:2px solid #9c9c9c;}
 .mBoard table {width:100%; border-top:1px solid #ff971c; border-left:1px solid #dedede;}
 .mBoard th {border-right:1px solid #dedede; border-bottom:1px solid #dedede; background:#f8f8f8;}
 .mBoard .left td, .mBoard td.left  {text-align:left;} 
 .mBoard td {text-align:center; border-right:1px solid #dedede; border-bottom:1px solid #dedede;}
+.mBoard .sun td, .mBoard .sun {color:#ef2424;}
 .mBoard td input {box-sizing:border-box; border:1px solid #e1e1e1;}
 .mBoard td a {display:block; text-align:left;}
 .mBoard td .half {overflow:hidden;}
@@ -444,6 +453,7 @@ td .ui-state-active:hover {color:#fff;}
 .btn_box .view span {color:#fa8508; background-image:url('/img/common/view_arrow.png'); background-repeat:no-repeat;}
 .btn_box .next {background:#fa8508; border-radius:25px;}
 .btn_box .next.cb {background:#55b5f2;}
+.btn_box .down {border:1px solid #dedede; background:#f0f0f0;}
 .btn_box .next span {color:#fff; background-image:url('/img/common/view_arrow01.png'); background-repeat:no-repeat;}
 .btn_box .normal span {background-image:url('/img/common/view_arrow02.png'); background-repeat:no-repeat;}
 

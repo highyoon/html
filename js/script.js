@@ -137,6 +137,11 @@ $(document).ready(function(){
 	 });
 
 	 $('.btn_box .next.time').click(function(){
+		 var p_pop = $('.popup');
+		 	if (p_pop.outerHeight() < $(document).height() ) p_pop.css('margin-top', '-'+p_pop.outerHeight()/2+'px');
+			else temp.css('top', '0px');
+			if (p_pop.outerWidth() < $(document).width() ) p_pop.css('margin-left', '-'+p_pop.outerWidth()/2+'px');
+			else p_pop.css('left', '0px');
 		$('.popup').fadeIn(200);
 		$('#maskPC').fadeIn(200);
 	});
@@ -208,6 +213,14 @@ $(document).ready(function(){
 		
 	}
 	FixedTab();
+	
+	/* 체험학습 교재 */
+	function showList(){
+	
+	}
+	$('.dl_button').click(function(){
+		$(this).next().toggleClass('on');
+	});
 
 	/* [s] 탭메뉴*/
 	$('.tab_box').on('click', '.menu a', function(e){
@@ -316,17 +329,7 @@ $(document).ready(function(){
 		console.log("slider_none");
 	}
 	
-	//pipeline_tooltip
-	$('.pipe .pipe_grid .detail_list li').click(function(){
-		$('.pipe .pipe_grid .detail_list li').removeClass('choice');
-		$(this).addClass('choice');
-	});
-	
-	//product_list hover effect
-	function over_eft(){
-		$(this).parent().toggleClass('over');
-	}
-	$('.result_list .over_area').hover(over_eft);
+
 	// btn_top
 	var globalTopBtnScrollFunc = function() {
 		var $btnTop = $('.btnTop');

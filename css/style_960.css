@@ -105,14 +105,14 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .contBox3 .bx_exper > div > ul li a {padding-left:100px;}
 #wrapCont .contBox3 .bx_exper .exper_tit {margin-bottom:7px; font-weight:bold;}
 #wrapCont .contBox3 .bx_exper p {letter-spacing:-1px;}
-#wrapCont .contBox3 .bx_exper .thumb {top:0; left:0;}
+#wrapCont .contBox3 .bx_exper .thumb {top:0; left:0;} 
 
 #wrapCont .contBox4 {padding:40px 0 55px;}
 #wrapCont .contBox4 p {font-size:15px;}
 #wrapCont .contBox4 .sub_txt {margin-top:10px;}
 #wrapCont .contBox4 .reserve_box {margin:40px -15px 0;}
 #wrapCont .contBox4 .reserve_box .col_4 {margin:0 15px; width:calc(25% -  30px)}
-#wrapCont .contBox4 .reserve_box .tit {padding-left:15px; line-height:1; font-size:22px; }
+#wrapCont .contBox4 .reserve_box .tit {padding-left:15px; line-height:1; font-size:22px;}
 #wrapCont .contBox4 .reserve_box .tit:after {top:0; left:0; width:2px; height:21px; background:#fcac3a;}
 #wrapCont .contBox4 .reserve_box .thumb {margin-top:25px;}
 #wrapCont .contBox4 .btn_box {position:absolute; top:10px; right:0;}
@@ -133,6 +133,7 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .step_box .thumb > span {display:inline-block; padding-top:30px;}
 
 #wrapCont .cont_box {margin-top:60px;}
+#wrapCont .cont_box .down_box {margin-top:60px;}
 #wrapCont .cont_box .sub_tit {margin-bottom:30px; font-size:22px;}
 #wrapCont .cont_box .sub_tit > span {padding-right:25px; font-size:22px;}
 #wrapCont .cont_box .sub_tit > span:after {top:1px; right:12px; width:1px; height:13px; background:#dedede;}
@@ -233,6 +234,10 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .exper_navi li .safe {background-position:-50px 0;}
 #wrapCont .exper_navi li .emotion {background-position:-100px 0;}
 #wrapCont .exper_navi li .history {background-position:-150px 0;}
+#wrapCont .exper_navi.fix li .job {background-position:0 0;}
+#wrapCont .exper_navi.fix li .safe {background-position:-25px 0;}
+#wrapCont .exper_navi.fix li .emotion {background-position:-50px 0;}
+#wrapCont .exper_navi.fix li .history {background-position:-75px 0;}
 
 #wrapCont .program_list {margin:100px -15px 0;}
 #wrapCont .program_list > li {margin:30px 15px; width:calc(25% - 30px); height:424px;}
@@ -259,13 +264,20 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont #history_exper .dl_button a > span {background-image:url('/img/common/dl_arrow03.png')}
 #wrapCont .program_list li .total_btn {position:absolute; top:0; width:360px;}
 #wrapCont .program_list li .total_btn dl { font-size:13px;}
-#wrapCont .program_list li .total_btn dt {padding:15px 0;}
+#wrapCont .program_list li .total_btn dt {padding:11px 0;}
 #wrapCont .program_list li .total_btn dd {}
-#wrapCont .program_list li .total_btn dd a {padding:14px 0;}
+#wrapCont .program_list li .total_btn dd a {padding:11px 0;}
+#wrapCont .program_list li .total_btn dd ul {padding:11px 0;}
 #wrapCont .program_list li .total_btn dd li {}
+#wrapCont .program_list li .total_btn .workbook {padding:11px 0;}
+#wrapCont .program_list li .total_btn .workbook a {}
 
 /* 숙박형 체험안내 */
 #wrapCont .stay_box {}
+#wrapCont .exper_navi.day li {width:12%;}
+#wrapCont .exper_navi.day li .one_day {background-position:0 0;}
+#wrapCont .exper_navi.day li .two_day {background-position:-50px 0;}
+#wrapCont .exper_navi.day li .three_day {background-position:-100px 0;}
 #wrapCont .stay_list {margin:30px 0; border:1px solid #dedede;}
 #wrapCont .stay_list > dl {}
 #wrapCont .stay_list > dl dt {top:0; left:0; padding:30px 0; width:130px; font-size:15px;}
@@ -279,6 +291,8 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .stay_list > dl dd li > span:last-child {padding:0; background:none;}
 
 /* 이용안내 */
+#wrapCont .tab_box.month {margin-top:25px;}
+#wrapCont .tab_box.month .menu li {width:calc(8.3333% - 1px)}
 #wrapCont .inner_box {margin-bottom:70px; padding:40px;}
 #wrapCont .inner_wrap.stay {height:220px;}
 #wrapCont .inner_wrap .inner_tit {font-size:17px;}
@@ -323,8 +337,12 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 
 /* table */
 .mBoard {}
+.mBoard.resort {margin-top:40px;}
+.mBoard.resort th {padding:10px; font-size:15px;}
 .mBoard table {}
 .mBoard th {padding:15px 0; font-size:17px;}
+.mBoard th.ever {background:#fffaf3;}
+.mBoard th.cabi {background:#f2fbff;}
 .mBoard td {padding:15px 15px;}
 .mBoard td input {padding:10px; height:32px;}
 .mBoard td .half li {float:left; width:50%;}
@@ -336,6 +354,7 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .mBoard .select_box {width:219px; }
 .mBoard .select_box.shot {width:100px; }
 .mBoard tfoot strong {margin:0 40px; font-size:22px;}
+#wrapCont .mBoard .btn_box {margin-top:20px; text-align:left;}
 
 /* autocomplete */
 .ui-autocomplete {width:310px;}
@@ -365,7 +384,7 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .scroll_navi ul li:hover .tooltip {display:block;}
 
 /* 팝업 */
-.popup {top:50%; left:50%; margin:-300px 0 0 -585px; padding:85px 60px 40px;}
+.popup {top:50%; left:50%; padding:85px 60px 40px;}
 .exper_pop.popup {width:1170px;}
 .popup .pop_wrap {}
 .popup .pop_wrap h3 {margin-bottom:30px; font-size:22px;}
@@ -377,10 +396,12 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 
 /* button */
 .btn_box {}
-.btn_box .view {padding:10px 25px;}
+.btn_box > a {padding:10px 25px;}
+.btn_box .down {margin-left:0;}
 .btn_box .view > span {padding-right:20px; font-size:15px; background-position:center right;}
-.btn_box .next {padding:10px 25px;}
+
 .btn_box .next span {padding-right:50px; font-size:15px; background-position:center right;}
+.btn_box .next span.file {padding-right:25px; background-image:url('/img/common/bg_down.png');}
 .btn_box .normal span {padding-right:20px; font-size:15px; background-position:center right;}
 
 /* 이미지형 아이콘 */
@@ -395,3 +416,4 @@ a.btn_ico, button.btn_ico, span.btn_ico {background-image:url('/img/common/sp_ic
 .btn_ico.tuv {margin-top:7px; width:91px; height:41px; background-position:-379px -0px;}
 .btn_ico.down {margin-left:10px; width:13px; height:10px; background-position:-69px -60px;}
 .btn_ico.work {margin-left:10px; width:15px; height:14px; background-position:-83px -60px;}
+.btn_ico.file {margin-left:10px; width:13px; height:10px; background-position:-69px -60px;}
