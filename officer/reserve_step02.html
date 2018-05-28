@@ -104,46 +104,37 @@
 					<ol class="">
 						<li class="on">
 							<div class="thumb"><span>STEP<br>01</span></div>
-							행사유형구분
+							행사유형선택
 						</li>
 						<li class="on">
 							<div class="thumb"><span>STEP<br>02</span></div>
-							단체정보/상품입력
-						</li>
-						<li class="on">
-							<div class="thumb"><span>STEP<br>03</span></div>
-							참가자 정보입력
+							방문인원 입력
 						</li>
 						<li class="on last">
 							<div class="thumb"><span>STEP<br>04</span></div>
-							예약완료
+							가예약 완료
 						</li>
 					</ol>
 					<ol class="col_5">
 						<li>
 							<div class="thumb"><span>STEP<br>01</span></div>
-							행사유형구분
+							행사유형선택
 						</li>
 						<li>
 							<div class="thumb"><span>STEP<br>02</span></div>
-							단체정보/상품입력
-						</li>
-						<li>
-							<div class="thumb"><span>STEP<br>03</span></div>
-							참가자 정보입력
+							방문인원 입력
 						</li>
 						<li>
 							<div class="thumb"><span>STEP<br>04</span></div>
-							체험학습 확인/선택
+							체험학습 선택
 						</li>
 						<li class="last">
 							<div class="thumb"><span>STEP<br>05</span></div>
-							예약완료
+							가예약 완료
 						</li>
 					</ol>
 				</div>
 				<div class="cont_box">
-					<h3 class="sub_tit">행사 구분</h3>
 					<div class="innder_tab">
 						<span class="double_tab">
 							<span class="col_2">
@@ -158,6 +149,7 @@
 				<div class="cont_box">
 					<h3 class="sub_tit">행사 유형</h3>
 					<div class="cal_box">
+						<p class="cal_tit">&lt;필수 선택&gt; <span class="cal_txt">※ 중복선택 불가</span></p>
 						<ul class="resort_list">
 							<li>
 								<input type="radio" id="ever_01" class="ip_hidden" />
@@ -177,6 +169,79 @@
 							</li>
 						</ul>
 						<div id="datepicker" class="cal"></div>
+					</div>
+					<div class="cal_box sec">
+						<p class="cal_tit">&lt;추가선택&gt;</p>
+						<p class="cal_txt">※ 에버랜드/캐리비안 베이 내부에서 식사를 원하시는 경우 선택해주세요.</p>
+						<ul class="resort_list">
+							<li>
+								<input type="radio" id="ever_01" class="ip_hidden" />
+								<label for="ever_01" class="agree_text">식사</label>
+							</li>
+							<li>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="cont_box">
+					<!-- cb는 cb클래스 -->
+					<h3 class="sub_tit cb"><span>에버랜드</span>단체정보</h3>
+					<div class="mBoard gBlock">
+						<table>
+							<caption>단체 정보 입력</caption>
+							<colgroup>
+								<col width="50%">
+								<col width="50%">
+								<col width="50%">
+								<col width="50%">
+							</colgroup>
+							<tbody>
+								<tr class="left">
+									<td>
+										<span class="bullet">단체구분</span>
+										<span class="select_box">
+											<label for="choice_part">선택하세요</label>
+											<select id="choice_part" class="select" title="단체선택">
+												<option selected="selected">선택하세요</option>
+												<option value="초등학교">초등학교</option>
+												<option value="중등학교">중등학교</option>
+												<option value="고등학교">고등학교</option>
+											</select>
+										</span>
+									</td>
+									<td>
+										<span class="bullet">지역</span>
+										<span class="select_box">
+											<label for="choice_loca">선택하세요</label>
+											<select id="choice_loca" class="select" title="지역선택">
+												<option selected="selected">선택하세요</option>
+												<option value="서울">서울</option>
+												<option value="경기">경기</option>
+												<option value="경남">경남</option>
+											</select>
+										</span>
+									</td>
+								</tr>
+								<tr class="left">
+									<td>
+										<span class="bullet">단체명</span>
+										<input type="text" class="gLong" id="tag_name">
+									</td>
+									<td>
+										<span class="bullet">학년</span>
+										<span class="select_box">
+											<label for="choice_grade">선택하세요</label>
+											<select id="choice_grade" class="select" title="지역선택">
+												<option selected="selected">선택하세요</option>
+												<option value="1학년">1학년</option>
+												<option value="2학년">2학년</option>
+												<option value="3학년">3학년</option>
+											</select>
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 

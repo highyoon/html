@@ -298,17 +298,29 @@ $(document).ready(function(){
 		});
 		//scroll indicator
 		$(function(){
-			//var pageInner = $('#wrapTop').offset().top;
-			//var pageInner2 = $('.contBox1').offset().top;
-			//var pageInner3 = $('.contBox2').offset().top;
-			//var pageInner4 = $('.contBox3').offset().top;
+			var $root = $('html, body');
+		    $('.exper_navi li a').click(function() {
+			    var href = $.attr(this, 'href');
+			    $root.animate({
+					scrollTop: $(href).offset().top-200
+			    }, 500, function () {
+				 window.location.hash = href;
+			    });
+			  return false;
+			});
+			var pageInner = $('#wrapTop').offset().top;
+			var pageInner2 = $('#job_exper').offset().top;
+			var pageInner3 = $('#safe_exper').offset().top;
+			var pageInner4 = $('#emotion_exper').offset().top;
 			
 
 			$(window).scroll(function(){
+				console.log("a");
+				console.log(pageInner2);
 				var _scTop = $(window).scrollTop();
 				$('.scroll_navi li').removeClass("on");
 				if( _scTop >= pageInner - 20 && _scTop <= pageInner2 - 600) {
-					$('.scroll_navi li.nav_01').addClass("on");
+					$('.exper_navi li').eq(0).addClass("on");
 				} else if ( _scTop >= pageInner2 - 600 && _scTop <= pageInner3- 160) {
 					$('.scroll_navi li.nav_01').addClass("on");
 				} else if ( (_scTop >= pageInner3 - 160)  && _scTop <= pageInner4-400) {
@@ -380,30 +392,36 @@ $(document).ready(function(){
     $(window).scroll(function(e){
 		var nowPos = $(window).scrollTop();
 		var fixedTab = $('.exper_navi').offset();
+		var ctrl_sec01 =  $('#job_exper').offset().top;
+		var ctrl_sec02 =  $('#safe_exper').offset().top;
+		var ctrl_sec03 =  $('#emotion_exper').offset().top;
+		var ctrl_sec04 =  $('#history_exper').offset().top;
 		
-		if( winWidth>checkWidth ){
-			if( nowPos<=250 ){
-				//$('#wrapTop').stop().animate({'top':'0'}, 150, 'easeOutCirc');
+		$('.exper_navi li').removeClass("on");
+		if( nowPos >= ctrl_sec01  && nowPos <= ctrl_sec02 - 105) {
+			$('.exper_navi li').eq(0).addClass("on");
+		} else if ( nowPos >= ctrl_sec02  && nowPos <= ctrl_sec03 - 160) {
+			$('.exper_navi li').eq(1).addClass("on");
+		} else if ( (nowPos >= ctrl_sec03 - 160)  && nowPos <= ctrl_sec04 ) {
+			$('.scroll_navi li').eq(2).addClass("on");
+		} else if ( nowPos >= ctrl_sec04 - 100)  {
+			$('.exper_navi li').eq(3).addClass("on");
+		};
+		$('.exper_navi li a').click(function (ev) {
+			ev.preventDefault();
+			var targetHash = $(this).attr('href'),
+			$targetObj = $(targetHash),
+			scroll_to = $targetObj.offset().top 
+			if( winWidth>checkWidth ){
+				$('html, body').stop(true,false).animate({scrollTop: scroll_to - 40},700, 'easeInOutQuart', function(){  });
 			} else {
-				//$('#wrapTop').stop().animate({'top':'-36px'}, 150, 'easeOutCirc');
+				//mobile
+				$('html, body').stop(true,false).animate({scrollTop: scroll_to - 120},700, 'easeInOutQuart', function(){  });
 			}
-			//main contentAnimation
-			var pos1 = 0;
-			var pos2 = 800;
-			var pos3 = 1400;
-			if( nowPos>=pos1 ){
-
-			}
-			if( nowPos>=pos2 ){
-				
-			}
-			if( nowPos>=pos3 ){
-				
-			}
-
-		} else {
 			
-
-		}
+		});
+		console.log("지금" + nowPos)
+		console.log(ctrl_sec01);
+		console.log("두번째" + ctrl_sec02);
 	});
 });

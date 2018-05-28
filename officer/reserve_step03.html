@@ -157,86 +157,6 @@
 				</div>
 				<!-- 숙박행사는 step03_1.html -->
 				<!-- 스텝2 단체정보/상품입력 -->
-				<div class="cont_box">
-					<!-- cb는 cb클래스 -->
-					<h3 class="sub_tit cb"><span>에버랜드</span>단체정보</h3>
-					<div class="mBoard gBlock">
-						<table>
-							<caption>단체 정보 입력</caption>
-							<colgroup>
-								<col width="50%">
-								<col width="50%">
-								<col width="50%">
-								<col width="50%">
-							</colgroup>
-							<tbody>
-								<tr class="left">
-									<td>
-										<span class="bullet">단체구분</span>
-										<span class="select_box">
-											<label for="choice_part">선택하세요</label>
-											<select id="choice_part" class="select" title="단체선택">
-												<option selected="selected">선택하세요</option>
-												<option value="초등학교">초등학교</option>
-												<option value="중등학교">중등학교</option>
-												<option value="고등학교">고등학교</option>
-											</select>
-										</span>
-									</td>
-									<td>
-										<span class="bullet">지역</span>
-										<span class="select_box">
-											<label for="choice_loca">선택하세요</label>
-											<select id="choice_loca" class="select" title="지역선택">
-												<option selected="selected">선택하세요</option>
-												<option value="서울">서울</option>
-												<option value="경기">경기</option>
-												<option value="경남">경남</option>
-											</select>
-										</span>
-									</td>
-								</tr>
-								<tr class="left">
-									<td>
-										<span class="bullet">단체명</span>
-										<input type="text" class="gLong" id="tag_name">
-									</td>
-									<td>
-										<span class="bullet">학년</span>
-										<span class="select_box">
-											<label for="choice_grade">선택하세요</label>
-											<select id="choice_grade" class="select" title="지역선택">
-												<option selected="selected">선택하세요</option>
-												<option value="1학년">1학년</option>
-												<option value="2학년">2학년</option>
-												<option value="3학년">3학년</option>
-											</select>
-										</span>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="cont_box">
-					<h3 class="sub_tit cb"><span>캐리비안 베이+체험학습</span>상품정보</h3>
-					<div class="mBoard">
-						<table>
-							<caption>단체 정보 선택</caption>
-							<tbody>
-								<tr class="left">
-									<td>
-										<span><input type="checkbox" id="choice01" class="ip_hidden" />
-										<label for="choice01" class="agree_text">에버랜드 이용권 + 체험학습</label></span>
-										<span><input type="checkbox" id="choice02" class="ip_hidden" />
-										<label for="choice02" class="agree_text">식사</label></span>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<p class="table_sub">* 중복 선택이 가능합니다.</p>
-					</div>
-				</div>
 				<!-- 스텝3 참가자 정보입력 -->
 				<div class="cont_box">
 					<h3 class="sub_tit"><span>에버랜드</span>입원수 입력</h3>
@@ -280,7 +200,7 @@
 								</tr>
 							</tfoot>
 						</table>
-						<p class="table_sub">* 면제 및 할인 대상자가 있을 경우 아래 양식을 작성하여 체험당일 지참해주시기 바랍니다. <a href="# none" title="새창열림" target="_blank" ><span>면세대상 확인서 다운로드</span>&gt;</a></p>
+						<p class="table_sub">* 면제 대상자가 있는 경우 각 지역 영업담당자와 사전에 협의해 주시고, 확인서 등 관련 서류는 지정 양식으로 작성하셔서 행사당일 지참해주세요. <a href="# none" title="새창열림" target="_blank" ><span>면세대상 확인서 다운로드</span> &gt;</a></p>
 					</div>
 				</div>
 
@@ -335,6 +255,7 @@
 								</tr>
 							</tbody>
 						</table>
+						<p class="table_sub"><strong>* 밀쿠폰이란?</strong> 지정 매장 내에서 자유롭게 식사 가능한 상품권 (이용매장: 매직타임, 가든테라스, 한가람, 오리엔탈)<br><strong>* 단체식사란?</strong> 사전 예약한 별도 공간에서 식사 가능한 단체 급식 (방문 3일전 예약확정 필수)</p>
 					</div>
 				</div>
 
@@ -357,12 +278,13 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td><input type="text" class="gFull"></td>
-									<td><input type="text" class="gFull"></td>
-									<td><input type="text" class="gFull"></td>
+									<td><input type="text" class="gFull" readonly placeholder="이름"></td>
+									<td><input type="text" class="gFull" readonly placeholder="휴대폰 번호를 입력해 주세요."></td>
+									<td><input type="text" class="gFull" readonly placeholder="E-mail을 입력해 주세요."></td>
 								</tr>
 							</tbody>
 						</table>
+						<p class="table_sub">* 연락처가 정확하지 않을 경우, 회원정보-마이페이지에서 수정해주세요. <a href="# none" title="새창열림" target="_blank" ><span>바로가기</span> &gt;</a></p>
 					</div>
 				</div>
 				

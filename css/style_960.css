@@ -160,6 +160,9 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .cont_box #my_faq dd {padding:30px 100px;}
 
 #wrapCont .cont_box .cal_box {padding:20px 20px 20px 30px; min-height:315px;}
+#wrapCont .cont_box .cal_box.sec {min-height:auto;}
+#wrapCont .cont_box .cal_box .cal_tit {font-size:17px;}
+#wrapCont .cont_box .cal_box .cal_txt {margin-top:5px; font-size:14px;}
 #wrapCont .cont_box .cal_box .resort_list {margin:55px 0;}
 #wrapCont .cont_box .cal_box .resort_list li {margin:15px 0;}
 #wrapCont .cont_box .cal_box .cal {position:absolute; top:20px; right:20px; width:568px; height:278px;}
@@ -230,6 +233,7 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .exper_navi.fix li .thumb {display:inline-block; width:25px; height:25px; border:0 none;}
 #wrapCont .exper_navi li .thumb > span {display:inline-block; margin-top:23px; width:50px; height:50px;}
 #wrapCont .exper_navi.fix li .thumb > span {display:inline-block; margin-top:13px; width:25px; height:25px; background-size:100px 25px;}
+#wrapCont .exper_navi.day.fix li .thumb > span {background-size:75px 50px;}
 #wrapCont .exper_navi li .job {background-position:0 0;}
 #wrapCont .exper_navi li .safe {background-position:-50px 0;}
 #wrapCont .exper_navi li .emotion {background-position:-100px 0;}
@@ -276,16 +280,28 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .stay_box {}
 #wrapCont .exper_navi.day li {width:12%;}
 #wrapCont .exper_navi.day li .one_day {background-position:0 0;}
+#wrapCont .exper_navi.day li.off .one_day {background-position:0 -50px;}
 #wrapCont .exper_navi.day li .two_day {background-position:-50px 0;}
+#wrapCont .exper_navi.day li.off .two_day {background-position:-50px -50px;}
 #wrapCont .exper_navi.day li .three_day {background-position:-100px 0;}
+#wrapCont .exper_navi.day li.off .three_day {background-position:-100px -50px;}
+#wrapCont .exper_navi.day.fix li .one_day {background-position:0 0;}
+#wrapCont .exper_navi.day.fix li .two_day {background-position:-25px 0;}
+#wrapCont .exper_navi.day.fix li .three_day {background-position:-50px 0;}
+#wrapCont .exper_navi.day.fix li.off .one_day {background-position:0 -25px;}
+#wrapCont .exper_navi.day.fix li.off .two_day {background-position:-25px -25px;}
+#wrapCont .exper_navi.day.fix li.off .three_day {background-position:-50px -25px;}
 #wrapCont .stay_list {margin:30px 0; border:1px solid #dedede;}
 #wrapCont .stay_list > dl {}
 #wrapCont .stay_list > dl dt {top:0; left:0; padding:30px 0; width:130px; font-size:15px;}
-#wrapCont .two .stay_list > dl dt {height:83px; line-height:83px;}
+#wrapCont .two .stay_list > dl dt {height:124px; line-height:124px;}
+#wrapCont .three .stay_list > dl dt {height:206px; line-height:206px;}
+#wrapCont .four .stay_list > dl dt {height:288px; line-height:288px;}
 #wrapCont .stay_list > dl dt > strong {font-size:17px;}
 #wrapCont .stay_list > dl dd {padding:30px 30px 30px 170px;}
 #wrapCont .stay_list > dl dd li {padding-left:58px; background-image:url('/img/common/bg_days.png');}
-#wrapCont .stay_list > dl dd li:first-child {}
+#wrapCont .stay_list > dl dd li:after {display:block; margin-left:-40px; content:''; padding-top:40px; background:url('/img/common/stay_list.png') no-repeat left center;}
+#wrapCont .stay_list > dl dd li:last-child:after {display:none;}
 #wrapCont .stay_list > dl dd li > strong {font-size:17px;}
 #wrapCont .stay_list > dl dd li > span {padding-right:26px; background:url('/img/common/day_arrow.png') no-repeat 98% 4px;}
 #wrapCont .stay_list > dl dd li > span:last-child {padding:0; background:none;}
@@ -293,12 +309,12 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 /* 이용안내 */
 #wrapCont .tab_box.month {margin-top:25px;}
 #wrapCont .tab_box.month .menu li {width:calc(8.3333% - 1px)}
-#wrapCont .inner_box {margin-bottom:70px; padding:40px;}
+#wrapCont .inner_box {margin-bottom:70px; padding:40px;}3
 #wrapCont .inner_wrap.stay {height:220px;}
 #wrapCont .inner_wrap .inner_tit {font-size:17px;}
 #wrapCont .inner_wrap ul {margin:20px 0 40px;}
 #wrapCont .inner_wrap ul li {margin:7px 0; font-size:15px;}
-#wrapCont .inner_wrap .step {margin:0 -20px;}
+#wrapCont .inner_wrap .step {margin:0 -20px; background:url('/img/common/guide_arrow.png') no-repeat 364px 85px;}
 #wrapCont .inner_wrap .step > li {margin:20px; width:calc(33.333% - 40px);}
 #wrapCont .inner_wrap .step .step_txt {font-size:17px;}
 #wrapCont .inner_wrap .step .step_txt > span {margin-right:12px; width:33px; height:33px; line-height:34px; font-size:15px;}
@@ -308,6 +324,14 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .guide_box > p {font-size:15px;}
 #wrapCont .guide_box .btn_box {}
 #wrapCont .guide_box .btn_box a {padding:10px 28px;}
+
+/* 뉴스 */
+ 
+.list_ctrl {margin-top:30px;}
+.list_ctrl li {}
+.list_ctrl li dt {padding:17px 0; width:135px; text-align:center;}
+.list_ctrl li dd {padding:17px 0; padding-left:30px;}
+.list_ctrl li dd a {}
 
 /* 행사관련 서류 */
 #wrapCont .file_box {}
@@ -341,6 +365,10 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .mBoard.resort th {padding:10px; font-size:15px;}
 .mBoard table {}
 .mBoard th {padding:15px 0; font-size:17px;}
+.mBoard th .head {width:20%; font-size:15px;}
+.mBoard th .head.left {}
+.mBoard th .head.tit {width:59%; font-size:20px; font-weight:bold; color:#222;}
+.mBoard th .head.right {}
 .mBoard th.ever {background:#fffaf3;}
 .mBoard th.cabi {background:#f2fbff;}
 .mBoard td {padding:15px 15px;}
@@ -351,6 +379,7 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .mBoard .agree_text {margin-right:75px; padding-left:30px;}
 .mBoard .last {border-right:0 none;}
 .mBoard .table_sub {margin-top:20px; font-size:14px;}
+.mBoard .table_sub a {}
 .mBoard .select_box {width:219px; }
 .mBoard .select_box.shot {width:100px; }
 .mBoard tfoot strong {margin:0 40px; font-size:22px;}
