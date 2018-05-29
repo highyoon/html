@@ -257,6 +257,9 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .program_list li .ex_tit {margin:20px 0; font-size:20px;}
 #wrapCont .program_list li .ex_txt {font-size:14px;}
 #wrapCont .program_list li .ex_info {margin-top:25px;}
+#wrapCont .program_list li .ex_info > span {margin-right:6px; width:12px; height:12px;}
+#wrapCont .program_list li .ex_info .time {background-position:-154px -60px;}
+#wrapCont .program_list li .ex_info .people {margin-left:8px; background-position:-167px -60px;}
 #wrapCont .program_list li .tag {margin-top:10px;}
 #wrapCont .program_list li .tag > span {padding:4px;}
 #wrapCont .program_list li .dl_button {bottom:0; width:100%; text-align:center;}

@@ -51,6 +51,8 @@ $(document).ready(function(){
 
 			$('.bx_why').bxSlider({
 				pager: false,
+				infiniteLoop:false,
+				hideControlOnEnd:true,
 				controls:true
 			});
 
@@ -58,8 +60,7 @@ $(document).ready(function(){
 				slideMargin:10,
 				minSlides: 2,
 				infiniteLoop:false,
-				controls:true,
-				pager: false
+				controls:false
 			});
 		}
 	//autocomplete
