@@ -112,6 +112,10 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapCont .contBox3 .bx_exper > div > ul li {box-sizing:border-box;}
 #wrapCont .contBox3 .bx_exper > div > ul li:last-child {border:0 none; min-height:auto;}
 #wrapCont .contBox3 .bx_exper > div > ul li a {position:relative; display:block;}
+#wrapCont .contBox3 .bx_exper > div > ul li a > span {display:inline-block;  font-weight:600;}
+#wrapCont .contBox3 .bx_exper > div > ul li a .job {color:#fa9217;}
+#wrapCont .contBox3 .bx_exper > div > ul li a .safe {color:#aac22a;}
+#wrapCont .contBox3 .bx_exper > div > ul li a .emotion {color:#297bae;}
 #wrapCont .contBox3 .bx_exper .exper_tit {}
 #wrapCont .contBox3 .bx_exper p {line-height:1.6; color:#222;}
 #wrapCont .contBox3 .bx_exper .thumb {position:absolute;}
