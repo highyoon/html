@@ -446,7 +446,7 @@ a.btn_ico, button.btn_ico, span.btn_ico {background-image:url('/img/common/sp_ic
 .btn_ico.more {width:23px; height:23px; background-position:0 -59px;}
 .btn_ico.m_count {margin-right:7px; width:8px; height:12px; background-position:-23px -59px;}
 .btn_ico.noti {margin-top:-2px; margin-right:2px; width:15px; height:15px; background-position:-34px -61px;}
-.btn_ico.tuv {margin-top:7px; width:91px; height:41px; background-position:-379px -0px;}
+.btn_ico.tuv {margin-top:7px; width:91px; height:40px; background-position:-379px -0px;}
 .btn_ico.down {margin-left:10px; width:13px; height:10px; background-position:-69px -60px;}
 .btn_ico.work {margin-left:10px; width:15px; height:14px; background-position:-83px -60px;}
 .btn_ico.file {margin-left:10px; width:13px; height:10px; background-position:-69px -60px;}

@@ -127,9 +127,18 @@
 							<tbody>
 								<tr class="left">
 									<td>
-										<span class="bullet">단체구분</span>
-										<span class="select_box">
-											<label for="choice_part">선택하세요</label>
+										<span class="bullet">지역</span>
+										<span class="select_box shot">
+											<label for="choice_part">단체</label>
+											<select id="choice_part" class="select" title="단체선택">
+												<option selected="selected">선택하세요</option>
+												<option value="초등학교">초등학교</option>
+												<option value="중등학교">중등학교</option>
+												<option value="고등학교">고등학교</option>
+											</select>
+										</span>
+										<span class="select_box shot">
+											<label for="choice_part">지역</label>
 											<select id="choice_part" class="select" title="단체선택">
 												<option selected="selected">선택하세요</option>
 												<option value="초등학교">초등학교</option>
@@ -140,33 +149,8 @@
 									</td>
 									<td>
 										<span class="bullet">행사예정일</span>
-										<span class="select_box shot">
-											<label for="choice_loca">2018</label>
-											<select id="choice_loca" class="select" title="년도선택">
-												<option selected="selected">선택하세요</option>
-												<option value="2018">2018</option>
-												<option value="2019">2019</option>
-												<option value="2020">2020</option>
-											</select>
-										</span>
-										<span class="select_box shot">
-											<label for="choice_loca">1월</label>
-											<select id="choice_loca" class="select" title="월선택">
-												<option selected="selected">선택하세요</option>
-												<option value="1월">1월</option>
-												<option value="2월">2월</option>
-												<option value="3월">3월</option>
-											</select>
-										</span>
-										<span class="select_box shot">
-											<label for="choice_loca">1일</label>
-											<select id="choice_loca" class="select" title="일선택">
-												<option selected="selected">선택하세요</option>
-												<option value="1일">1일</option>
-												<option value="2일">2일</option>
-												<option value="3일">3일</option>
-											</select>
-										</span>
+										<input type="text" class="gShort" id=""> 또는
+										<input type="text" class="gShort" id="">
 									</td>
 								</tr>
 								<tr class="left">
@@ -176,7 +160,7 @@
 									</td>
 									<td>
 										<span class="bullet">행사인원</span>
-										<input type="text" class="gLong" id="tag_name">
+										<input type="text" class="gShort" id="tag_name">
 									</td>
 								</tr>
 							</tbody>

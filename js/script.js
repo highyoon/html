@@ -194,8 +194,13 @@ $(document).ready(function(){
 	
 	/* 탭 상단 고정 */
 	var chk_exper = $('.contents').hasClass('exper');
+	var chk_stay = $('.contents').hasClass('stay');
 
 		if (chk_exper)
+		{
+			FixedTab();
+		}
+		if (chk_stay)
 		{
 			FixedTab();
 		}
@@ -258,42 +263,6 @@ $(document).ready(function(){
 	var m =$('.main').length;
 
 
-	$(function(){
-		var chk_exper = $('.contents').hasClass('exper');
-
-		if (chk_exper)
-		{
-			var pageInner = $('#wrapTop').offset().top;
-			var pageInner2 = $('#job_exper').offset().top;
-			var pageInner3 = $('#safe_exper').offset().top;
-			var pageInner4 = $('#emotion_exper').offset().top;
-			
-
-			$(window).scroll(function(){
-				console.log("a");
-				console.log(pageInner2);
-				var _scTop = $(window).scrollTop();
-				$('.scroll_navi li').removeClass("on");
-				if( _scTop >= pageInner - 20 && _scTop <= pageInner2 - 600) {
-					$('.exper_navi li').eq(0).addClass("on");
-				} else if ( _scTop >= pageInner2 - 600 && _scTop <= pageInner3- 160) {
-					$('.scroll_navi li.nav_01').addClass("on");
-				} else if ( (_scTop >= pageInner3 - 160)  && _scTop <= pageInner4-400) {
-					$('.scroll_navi li.nav_02').addClass("on");
-				} else if ( _scTop >= pageInner4 - 400)  {
-					$('.scroll_navi li.nav_03').addClass("on");
-				};
-			});
-			 $('.scroll_navi li a').click(function (e) {
-				e.preventDefault();
-				var idx = $(this).data("idx");
-				var $target = $(".cont").eq(idx -1);
-				var $move = $target.offset().top;
-				$("html, body").stop(false).animate({ scrollTop: $move - 80}, 400);
-			});
-		}
-		
-	});
 	
 
 	// btn_top
@@ -323,14 +292,26 @@ $(document).ready(function(){
 		$('html, body').stop(true,false).animate({scrollTop: scroll_to},700, 'easeInOutQuart', function(){ });
 	});
 
-	
+	$('.exper_navi li a').click(function (ev) {
+		ev.preventDefault();
+		var targetHash = $(this).attr('href'),
+		$targetObj = $(targetHash),
+		scroll_to = $targetObj.offset().top 
+		if( winWidth>checkWidth ){
+			$('html, body').stop(true,false).animate({scrollTop: scroll_to - 70},700, 'easeInOutQuart', function(){  });
+		} else {
+			//mobile
+			$('html, body').stop(true,false).animate({scrollTop: scroll_to - 120},700, 'easeInOutQuart', function(){  });
+		}
+		
+	});
 	//scroll
     $(window).scroll(function(e){
 		var chk_exper = $('.contents').hasClass('exper');
+		var chk_stay = $('.contents').hasClass('stay');
 
 		if (chk_exper)
 		{
-			console.log("예스");
 			var nowPos = $(window).scrollTop();
 			var fixedTab = $('.exper_navi').offset();
 			var ctrl_sec01 =  $('#job_exper').offset().top;
@@ -341,11 +322,11 @@ $(document).ready(function(){
 			$('.exper_navi li').removeClass("on");
 			if( nowPos >= ctrl_sec01  && nowPos <= ctrl_sec02 - 105) {
 				$('.exper_navi li').eq(0).addClass("on");
-			} else if ( nowPos >= ctrl_sec02  && nowPos <= ctrl_sec03 - 160) {
+			} else if ( nowPos >= ctrl_sec02 - 100  && nowPos <= ctrl_sec03 - 200) {
 				$('.exper_navi li').eq(1).addClass("on");
-			} else if ( (nowPos >= ctrl_sec03 - 160)  && nowPos <= ctrl_sec04 ) {
-				$('.scroll_navi li').eq(2).addClass("on");
-			} else if ( nowPos >= ctrl_sec04 - 100)  {
+			} else if ( (nowPos >= ctrl_sec03 - 120)  && nowPos <= ctrl_sec04 -130 ) {
+				$('.exper_navi li').eq(2).addClass("on");
+			} else if ( nowPos >= ctrl_sec04 - 120)  {
 				$('.exper_navi li').eq(3).addClass("on");
 			};
 			$('.exper_navi li a').click(function (ev) {
@@ -361,12 +342,7 @@ $(document).ready(function(){
 				}
 				
 			});
-			console.log("지금" + nowPos)
-			console.log(ctrl_sec01);
-			console.log("두번째" + ctrl_sec02);
-		} else{
-
-		}
+		} 
 	});
 	
 });

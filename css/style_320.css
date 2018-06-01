@@ -252,7 +252,7 @@ right:10px; background-position:-14px -25px;
 #wrapCont #safe_exper .dl_button a > span {background-image:url('/img/common/dl_arrow01.png')}
 #wrapCont #emotion_exper .dl_button a > span {background-image:url('/img/common/dl_arrow02.png')} 
 #wrapCont #history_exper .dl_button a > span {background-image:url('/img/common/dl_arrow03.png')}
-#wrapCont .program_list li .total_btn {position:absolute;}
+#wrapCont .program_list li .total_btn {position:fixed; top:120px; left:3%; width:94%;}
 #wrapCont .program_list li .total_btn dt {padding:17px 0;}
 #wrapCont .program_list li .total_btn dd a {padding:17px 0;}
 #wrapCont .program_list li .total_btn dd ul {padding:17px 0;}
@@ -348,6 +348,7 @@ right:10px; background-position:-14px -25px;
 /* 셀렉트 박스 */
 .select_box {position:relative; width:auto; height:36px; background-size:35px 34px;}
 .sort.etc .select_box {}
+.select_box.shot {width:31%;}
 .select_box label {font-size:14px; top:6px; left:9px;}
 .select_box select {width:100%; height:32px; min-height:32px; line-height: 32px; padding:0 50px 0 10px;}
 
@@ -380,12 +381,14 @@ right:10px; background-position:-14px -25px;
 .mBoard.rs_table td:nth-of-type(1):before { content: "이름"; }
 .mBoard.rs_table td:nth-of-type(2):before { content: "휴대폰"; }
 .mBoard.rs_table td:nth-of-type(3):before { content: "이메일"; }
+.mBoard td .gShort {width:28%;}
 
 .mBoard.file tr, .mBoard.file th, .mBoard.file tbody {display:block; overflow:hidden;}
 .mBoard.file td {display:inline-block; float:left; width:33.3333%; box-sizing:border-box;}
 
 .mBoard td > span {display:block;}
 .mBoard td input {padding:5px; width:55%; height:35px; font-size:.8rem;}
+.mBoard td input 
 	
 .ip_hidden + label {display:inline-block; padding:5px 0  5px 30px; background: url('/img/common/m_chk_off.gif') 0 3px no-repeat; background-size:16px 16px;}
 .ip_hidden label.on {background: url('/img/common/m_chk_on.gif') 0 3px no-repeat; background-size:16px 16px;}
