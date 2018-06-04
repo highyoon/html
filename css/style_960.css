@@ -138,21 +138,21 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .cont_box .sub_tit {margin-bottom:30px; font-size:22px;}
 #wrapCont .cont_box .sub_tit > span {padding-right:25px; font-size:22px;}
 #wrapCont .cont_box .sub_tit > span:after {top:1px; right:12px; width:1px; height:13px; background:#dedede;}
-#wrapCont .cont_box #my_reserve {margin-top:15px;}
+#wrapCont .cont_box .toggle_menu {margin-top:15px;}
 #wrapCont .cont_box .toggle_menu dt {padding:25px 0; background-position:98% bottom;}
 #wrapCont .cont_box .toggle_menu dt.on { background-position:98% top;}
-#wrapCont .cont_box #my_reserve dt .date {padding:0 55px;}
-#wrapCont .cont_box #my_reserve dt > span {font-size:17px;}
-#wrapCont .cont_box #my_reserve dd {padding:25px 0 25px; font-family:'NanumSquareRound', sans-serif;}
-#wrapCont .cont_box #my_reserve dd > ul {padding-left:200px}
-#wrapCont .cont_box #my_reserve dd > ul > li {margin:15px 0; padding-left:15px; float:left; width:50%;}
-#wrapCont .cont_box #my_reserve dd > ul > li:after {top:7px; left:0; width:3px; height:3px;}
-#wrapCont .cont_box #my_reserve dd > ul > li > div {display:inline-block; vertical-align:top; color:#222;}
-#wrapCont .cont_box #my_reserve dd > ul > li .r_tit {width:110px;}
-#wrapCont .cont_box #my_reserve dd > ul > li .t_tit {}
-#wrapCont .cont_box #my_reserve dd > ul > li ul {margin-top:5px;}
-#wrapCont .cont_box #my_reserve dd > ul > li li {font-size:14px;}
-#wrapCont .cont_box #my_reserve dd > ul > li li .gLeft {margin-right:15px;}
+#wrapCont .cont_box .toggle_menu dt .date {padding:0 55px;}
+#wrapCont .cont_box .toggle_menu dt > span {font-size:17px;}
+#wrapCont .cont_box .toggle_menu dd {padding:25px 0 25px; font-family:'NanumSquareRound', sans-serif;}
+#wrapCont .cont_box .toggle_menu dd > ul {padding-left:200px}
+#wrapCont .cont_box .toggle_menu dd > ul > li {margin:15px 0; padding-left:15px; float:left; width:50%;}
+#wrapCont .cont_box .toggle_menu dd > ul > li:after {top:7px; left:0; width:3px; height:3px;}
+#wrapCont .cont_box .toggle_menu dd > ul > li > div {display:inline-block; vertical-align:top; color:#222;}
+#wrapCont .cont_box .toggle_menu dd > ul > li .r_tit {width:110px;}
+#wrapCont .cont_box .toggle_menu dd > ul > li .t_tit {}
+#wrapCont .cont_box .toggle_menu dd > ul > li ul {margin-top:5px;}
+#wrapCont .cont_box .toggle_menu dd > ul > li li {font-size:14px;}
+#wrapCont .cont_box .toggle_menu dd > ul > li li .gLeft {margin-right:15px;}
 
 #wrapCont .cont_box #my_faq {margin-top:40px;}
 #wrapCont .cont_box #my_faq dt {font-size:15px;}
@@ -279,6 +279,7 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 #wrapCont .program_list li .total_btn dd li {}
 #wrapCont .program_list li .total_btn .workbook {padding:11px 0;}
 #wrapCont .program_list li .total_btn .workbook a {}
+#wrapCont .program_list li .total_btn .close_work {display:none;}
 
 /* 숙박형 체험안내 */
 #wrapCont .stay_box {}

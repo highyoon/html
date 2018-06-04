@@ -148,14 +148,14 @@ right:10px; background-position:-14px -25px;
 
 #wrapCont .cont_box {margin-top:50px;}
 #wrapCont .cont_box .sub_tit {margin-bottom:15px; line-height:1; font-size:1.1rem;}
-#wrapCont .cont_box #my_reserve {margin-top:15px;}
-#wrapCont .cont_box #my_reserve dt {padding:18px 15px 10px; line-height:1.4; font-size:.9rem; background-image:url('/img/common/dt_list_mState.png'); background-size:17px 120px; background-position:97% 120%;}
-#wrapCont .cont_box #my_reserve dt.on {background-position:97% -20%;}
-#wrapCont .cont_box #my_reserve dt .subject {display:block;}
-#wrapCont .cont_box #my_reserve dd > ul {padding:15px;}
-#wrapCont .cont_box #my_reserve dd > ul > li {margin:15px 0; padding-left:13px; line-height:1.4;}
-#wrapCont .cont_box #my_reserve dd > ul > li:after {top:5px; left:0; width:3px; height:3px;}
-#wrapCont .cont_box #my_reserve dd > ul > li ul {margin-top:10px;}
+#wrapCont .cont_box .toggle_menu {margin-top:15px;}
+#wrapCont .cont_box .toggle_menu dt {padding:18px 15px 10px; line-height:1.4; font-size:.9rem; background-image:url('/img/common/dt_list_mState.png'); background-size:17px 120px; background-position:97% 120%;}
+#wrapCont .cont_box .toggle_menu dt.on {background-position:97% -20%;}
+#wrapCont .cont_box .toggle_menu dt .subject {display:block;}
+#wrapCont .cont_box .toggle_menu dd > ul {padding:15px;}
+#wrapCont .cont_box .toggle_menu dd > ul > li {margin:15px 0; padding-left:13px; line-height:1.4;}
+#wrapCont .cont_box .toggle_menu dd > ul > li:after {top:5px; left:0; width:3px; height:3px;}
+#wrapCont .cont_box .toggle_menu dd > ul > li ul {margin-top:10px;}
 
 #wrapCont .cont_box #my_faq {margin-top:40px;}
 #wrapCont .cont_box #my_faq dt {padding:18px 15px 10px; line-height:1.4; font-size:.9rem; background-image:url('/img/common/dt_list_mState.png'); background-size:17px 120px; background-position:97% 120%;}
@@ -252,12 +252,15 @@ right:10px; background-position:-14px -25px;
 #wrapCont #safe_exper .dl_button a > span {background-image:url('/img/common/dl_arrow01.png')}
 #wrapCont #emotion_exper .dl_button a > span {background-image:url('/img/common/dl_arrow02.png')} 
 #wrapCont #history_exper .dl_button a > span {background-image:url('/img/common/dl_arrow03.png')}
-#wrapCont .program_list li .total_btn {position:fixed; top:120px; left:3%; width:94%;}
+#wrapCont .program_list li .total_btn {position:fixed; top:120px; left:3%; padding-bottom:70px; width:94%;}
 #wrapCont .program_list li .total_btn dt {padding:17px 0;}
 #wrapCont .program_list li .total_btn dd a {padding:17px 0;}
 #wrapCont .program_list li .total_btn dd ul {padding:17px 0;}
 #wrapCont .program_list li .total_btn dd li {margin:10px 0;}
 #wrapCont .program_list li .total_btn .workbook {padding:17px 0;}
+#wrapCont .program_list li .total_btn .close_work {position:absolute; bottom:0; width:100%; text-align:center;}
+#wrapCont .program_list li .total_btn .close_work a {display:inline-block; width:50px; height:50px;}
+#wrapCont .program_list li .total_btn .close_work img {width:100%;}
 
 /* 숙박형 체험안내 */
 .tab_menu.col_6 li {width:calc(17% -  5px);}
@@ -319,7 +322,7 @@ right:10px; background-position:-14px -25px;
 #wrapCont .cont_box .exper_choice {padding:15px;}
 #wrapCont .cont_box .exper_choice .ex_tit {font-size:.9rem;}
 #wrapCont .cont_box .exper_choice > ul {margin:0 -6px;}
-#wrapCont .cont_box .exper_choice > ul li {margin:6px; width:calc(50% - 1px); min-height:115px;}
+#wrapCont .cont_box .exper_choice > ul li {margin:6px; width:calc(50% - 12px); min-height:115px;}
 
 #wrapCont .cont_box .done {}
 #wrapCont .cont_box .done > p {}
@@ -337,6 +340,11 @@ right:10px; background-position:-14px -25px;
 /* Footer */
 #wrapFooter {margin-top:50px; padding:15px 0;}
 
+/* autocomplete */
+.ui-autocomplete {width:100%;}
+.ui-autocomplete li {padding:6px; font-size:.9rem;}
+.ui-autocomplete li:hover {}
+#ui-id-1 {width:100%;}
 
 /* common --------------------------------------------------------------------------------------------------------------------------------------------*/
 #maskMobile { z-index:10; background-color:#232927; opacity:.7; }
@@ -388,7 +396,7 @@ right:10px; background-position:-14px -25px;
 
 .mBoard td > span {display:block;}
 .mBoard td input {padding:5px; width:55%; height:35px; font-size:.8rem;}
-.mBoard td input 
+.mBoard td input.gFull {width:100%;}
 	
 .ip_hidden + label {display:inline-block; padding:5px 0  5px 30px; background: url('/img/common/m_chk_off.gif') 0 3px no-repeat; background-size:16px 16px;}
 .ip_hidden label.on {background: url('/img/common/m_chk_on.gif') 0 3px no-repeat; background-size:16px 16px;}

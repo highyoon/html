@@ -103,43 +103,6 @@ $(document).ready(function(){
 		}
 	});
 
-	//예약내역 toggle
-	r_list();
-	$(".toggle_menu dd").hide();
-	$(".toggle_menu dd").hide();
-	$(".toggle_menu dt").eq(0).addClass("on");
-	$(".toggle_menu dd").eq(0).show();
-	function r_list(){
-		$(".toggle_menu dt").click(function(){
-            if (!$(this).hasClass("on")) {
-                $(".toggle_menu dt").removeClass("on");
-                $(".toggle_menu dd").hide();
-                $(this).addClass("on");
-                $(this).next().slideDown();
-            } else {
-                $(this).removeClass("on");
-                $(this).next().slideUp();
-            }
-		});
-	}
-	//datepicker
-	$(function() {
-		$("#datepicker").datepicker({
-			dateFormat: "yy/mm/dd",
-			monthNames: ['1 월','2 월','3 월','4 월','5 월','6 월','7 월','8 월','9 월','10 월','11 월','12 월'],
-			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],  
-		});
-	 });
-
-	 $('.btn_box .next.time').click(function(){
-		 var p_pop = $('.popup');
-		 	if (p_pop.outerHeight() < $(document).height() ) p_pop.css('margin-top', '-'+p_pop.outerHeight()/2+'px');
-			else temp.css('top', '0px');
-			if (p_pop.outerWidth() < $(document).width() ) p_pop.css('margin-left', '-'+p_pop.outerWidth()/2+'px');
-			else p_pop.css('left', '0px');
-		$('.popup').fadeIn(200);
-		$('#maskPC').fadeIn(200);
-	});
 	$('.btn_close a').click(function(){
 		$('.popup').fadeOut(200);
 		$('#maskPC').fadeOut(200);

@@ -8,7 +8,6 @@
    Cascading Style Sheets
 --------------------------------------------------*/
 
-@import url("/css/layout.css");
-@import url("/css/font.css");
-@import url("/css/style_320.css") screen and (max-width:960px);
-@import url("/css/style_960.css") screen and (min-width:961px);
+@import url("layout.css");
+@import url("style_320.css") screen and (max-width:960px);
+@import url("style_960.css") screen and (min-width:961px);
