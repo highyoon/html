@@ -31,6 +31,11 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 #wrapTop {position:relative; width:100%; background:#fff; z-index:10;}
 .main #wrapTop {position:fixed; top:0;}
 #wrapTop h1 {position:absolute; text-indent:-999em;}
+/* 2018-06-20 */
+#wrapTop .resort {position:absolute; text-indent:-999em;}
+
+
+
 #wrapTop h1 a {display:block; height:100%;}
 #wrapTop .menuBox {position:absolute; font-weight:bold;}
 #wrapTop .menuBox > ul {text-align:right;}
@@ -179,6 +184,12 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 .double_tab .col_2 a {display:block; width:100%; height:100%; text-align:center;}
 .double_tab .col_2 a {z-index: 100; margin:-1px; border:solid 1px #dedede;}
 .double_tab .col_2 a.on {margin:-1px; color:#fff; border:solid 1px #ff971c; background:#ff971c; z-index:100;}
+.double_tab .col_3+.double_tab .col_3 {border:none;}
+.double_tab .col_3 {position:relative; margin-bottom:-1px; display:block; float:left; width:calc(34% - 9px);  border-right:solid 1px #dedede; z-index:10;}
+.double_tab .col_3 a {display:block; width:100%; height:100%; text-align:center;}
+.double_tab .col_3 a {z-index: 100; margin:-1px; border:solid 1px #dedede;}
+.double_tab .col_3 a.on {margin:-1px; color:#fff; border:solid 1px #ff971c; background:#ff971c; z-index:100;}
+.double_tab .col_3:last-child {border-right:0 none;}
 
 #wrapCont .cont_box {}
 #wrapCont .cont_box .sub_tit {font-family:'NanumSquare', sans-serif;}
@@ -435,6 +446,7 @@ a:hover { color:#444; text-decoration:none; cursor:pointer; }
 .tab_menu.col_3 li {width:calc(33.333% - 1px);}
 .tab_menu.col_2 li {width:calc(50% - 1px);}
 .tab_menu.col_4 li {width:calc(25% - 1px);}
+.tab_menu.col_5 li {width:calc(20% - 1px);}
 .tab_menu.col_6 li {width:calc(17% - 5px);}
 
 /* input */
@@ -470,7 +482,7 @@ td .ui-state-active:hover {color:#fff;}
 .ui-datepicker-calendar > thead th:last-child span, .ui-datepicker-calendar > tbody td:last-child a {color:blue;}
 
 /* 팝업 */
-.popup {display:none; position:absolute; box-sizing:border-box; background:#fff; z-index:13;}
+.popup {display:none; position:fixed; box-sizing:border-box; background:#fff; z-index:13;}
 .popup .pop_wrap {}
 .popup .pop_wrap h3 {line-height:1.4;}
 .popup .pop_wrap .gUtil {}
@@ -481,6 +493,18 @@ td .ui-state-active:hover {color:#fff;}
 .popup .btn_close a {display:block; text-indent:-999em; width:100%; height:100%; background-repeat:no-repeat;}
 
 #maskPC { z-index:11; background-color:#232927; opacity:.6; }
+
+/*로딩박스*/
+.loading_box {position:fixed; bottom:25%; text-align:center; box-sizing:border-box; background:#fff; z-index:50;}
+.loading_box > img {
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+.loading_box > p {}
 
 /* Button */
 .btn_box:before {display:block; content:""; clear:both;}
@@ -493,6 +517,29 @@ td .ui-state-active:hover {color:#fff;}
 .btn_box .down {border:1px solid #dedede; background:#f0f0f0;}
 .btn_box .next span {color:#fff; background-image:url('/img/common/view_arrow01.png'); background-repeat:no-repeat;}
 .btn_box .normal span {background-image:url('/img/common/view_arrow02.png'); background-repeat:no-repeat;}
+/*2018-06-20*/
+.btn_box .cancle {color:#fff; border-radius:25px; background:#888;}
+
 
 /* 이미지형 아이콘 */
 a.btn_ico, button.btn_ico, span.btn_ico {display:inline-block; overflow:hidden; font-size:0; line-height:0; vertical-align:middle; white-space:nowrap;}
+
+
+/* 2018-06-25 */
+.agree_box .text-bold,
+.agree_box .text-bold * {color:#5d257a; font-weight:bold;}
+.agree_box .provbox dl {border:solid 1px #dbdbdb;}
+.agree_box .provbox table {border-top:solid 2px #9b45ad; border-bottom:1px solid #9b45ad; width:100%;}
+.agree_box .provbox table th { background-color:#f6edf7; color:#777777; border-top:solid 1px #bfbfbf; border-left:solid 1px #bfbfbf;}
+.agree_box .provbox table th:first-child {border-top:0; border-left:0;}
+.agree_box .provbox table td { border-left:solid 1px #bfbfbf; border-top:solid 1px #bfbfbf; text-align:left;}
+.agree_box .provbox table td.stit {background-color:#f6edf7;font-weight:normal; text-align:center; border-left:solid 0px #bfbfbf;}
+.agree_box .provbox table td.first { border-left:solid 0px #bfbfbf;}
+.agree_box .provbox table td.center {text-align:center;}
+.agree_box .provbox2 {font-weight:bold;}
+
+/* 2018-06-26 */
+#wrapCont .guide_box {background-color:#fffaed;}
+#wrapCont .guide_box.cb {background-color:#e6f5ff;}
+#wrapCont .guide_box > h3 {background-image:url('/img/common/el_ci.png'); background-repeat:no-repeat;}
+#wrapCont .guide_box.cb > h3 {background-image:url('/img/common/cb_ci.png');}

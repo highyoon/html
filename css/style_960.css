@@ -6,7 +6,12 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 /* layout -----------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Top */
 #wrapTop {height:82px; border-bottom:2px solid #ff971c; }
-#wrapTop h1 {left:0; top:20px; width:110px; height:41px; background:url('/img/common/logo.png') no-repeat;}
+#wrapTop h1 {left:80px; top:20px; width:110px; height:41px; background:url('/img/common/logo.png') no-repeat;}
+/* 2018-06-20 */
+#wrapTop .resort {left:0; top:15px; width:67px; height:52px; background:url('/img/common/resort_logo.png') no-repeat;}
+#wrapTop .resort a {display:block; width:100%; height:100%;}
+
+
 #wrapTop .menuBox {top:33px; right:0;}
 #wrapTop .menuBox > ul {}
 #wrapTop .menuBox > ul > li {}
@@ -348,6 +353,8 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .double_tab {height:50px;}
 .double_tab .col_2 {height:50px; line-height:50px;}
 .double_tab .col_2 a {font-size:17px;}
+.double_tab .col_3 {height:50px; line-height:50px;}
+.double_tab .col_3 a {font-size:17px;}
 
 #wrapFooter {margin-top:55px;}
 #wrapFooter .copyright {height:55px; line-height:55px; font-size:14px;}
@@ -378,6 +385,7 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .mBoard th.cabi {background:#f2fbff;}
 .mBoard td {padding:15px 15px;}
 .mBoard td input {padding:10px; height:32px;}
+.mBoard td .ip_num {margin-left:20px; width:60px; height:34px;}
 .mBoard td .half li {float:left; width:50%;}
 .mBoard td .bullet {padding-left:12px; width:100px; font-size:17px; font-weight:600;}
 .mBoard td .gLong {width:219px;}
@@ -386,7 +394,7 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .mBoard .table_sub {margin-top:20px; font-size:14px;}
 .mBoard .table_sub a {}
 .mBoard .select_box {width:219px; }
-.mBoard .select_box.shot {width:100px; }
+.mBoard .select_box.short {width:100px; }
 .mBoard tfoot strong {margin:0 40px; font-size:22px;}
 #wrapCont .mBoard .btn_box {margin-top:20px; text-align:left;}
 
@@ -428,6 +436,10 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .popup .btn_close {top:20px; right:20px; width:23px; height:24px;}
 .popup .btn_close a {background-image:url('/img/common/pop_close.png');}
 
+/*로딩박스*/
+.loading_box {left:50%; margin-left:-245px; padding:50px; width:490px;}
+.loading_box > p {margin-top:25px; font-size:20px;}
+
 /* button */
 .btn_box {}
 .btn_box > a {padding:10px 25px;}
@@ -437,6 +449,8 @@ body, form, input, select, textarea, button { font-size:14px; line-height:18px; 
 .btn_box .next span {padding-right:50px; font-size:15px; background-position:center right;}
 .btn_box .next span.file {padding-right:25px; background-image:url('/img/common/bg_down.png');}
 .btn_box .normal span {padding-right:20px; font-size:15px; background-position:center right;}
+/*2018-06-20*/
+.btn_box .cancle {font-size:15px;}
 
 /* 이미지형 아이콘 */
 a.btn_ico, button.btn_ico, span.btn_ico {background-image:url('/img/common/sp_icon.png'); background-repeat:no-repeat;}
@@ -451,3 +465,22 @@ a.btn_ico, button.btn_ico, span.btn_ico {background-image:url('/img/common/sp_ic
 .btn_ico.down {margin-left:10px; width:13px; height:10px; background-position:-69px -60px;}
 .btn_ico.work {margin-left:10px; width:15px; height:14px; background-position:-83px -60px;}
 .btn_ico.file {margin-left:10px; width:13px; height:10px; background-position:-69px -60px;}
+
+
+/* 2018-06-25 */
+.agree_box .provtit {margin-top:30px;}
+.agree_box .policy_txtinfo {margin-top:7px; line-height:18px;}
+.agree_box .policy_txtinfo .pd1 {padding-left:15px; line-height:18px;}
+.agree_box .box01 {margin-top:10px;}
+.agree_box .provbox dl {padding:4px 15px 16px;}
+.agree_box .provbox table {margin:5px 0 10px 0; }
+.agree_box .provbox table th {padding:9px 0 6px 0; }
+.agree_box .provbox table td {padding:9px 5px 6px 10px; }
+.agree_box .provbox table td.stit {padding:9px 0 6px 0; }
+.agree_box .provbox2 { padding:10px 0 0 12px;}
+
+/* 2018-06-26 */
+#wrapCont .guide_box.cb {background-image:url('/img/common/bg_guide_cb.jpg'); background-position:right bottom;}
+#wrapCont .guide_box > h3 {padding-top:61px;}
+#wrapCont .guide_box.cb > h3 {padding-top:51px;}
+#wrapCont .guide_box .btn_box {margin-top:20px;}

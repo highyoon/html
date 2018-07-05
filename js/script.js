@@ -50,10 +50,19 @@ $(document).ready(function(){
 	$(window).resize(function() {
 		winWidth = $(window).width();
 		if( winWidth>checkWidth ){
+			var hasMain = $('body').hasClass('main');
+			if( hasMain ){
 			location.reload();
+			} else {
+				console.log("no main");
+			}
 		} else {
-			start_roll();
-			main_bx.reloadSlider();
+			var hasMain = $('body').hasClass('main');
+			if( hasMain ){
+				start_roll();
+				//main_bx.reloadSlider();
+				location.reload();
+			}
 		}
 	});
 	
@@ -182,26 +191,47 @@ $(document).ready(function(){
 		
 	}
 	
-	
+	//2018-06-25
+	$('.btn_box .next.time').click(function(){
+		 var p_pop = $('.popup');
+		 	if (p_pop.outerHeight() < $(document).height() ) p_pop.css('margin-top', '-'+p_pop.outerHeight()/2+'px');
+			else temp.css('top', '0px');
+			if (p_pop.outerWidth() < $(document).width() ) p_pop.css('margin-left', '-'+p_pop.outerWidth()/2+'px');
+			else p_pop.css('left', '0px');
+		$('.popup').fadeIn(200);
+		$('#maskPC').fadeIn(200);
+	});
+
+
 	/* 체험학습 교재 */
 	function showList(){
 	
 	}
 	$('.dl_button').click(function(){
+		$(this).toggleClass('on');
 		$(this).next().toggleClass('on');
 	});
-
+	$('.total_btn .close_work a').click(function(){
+		$('.total_btn').removeClass('on');
+	});
 	/* [s] 탭메뉴*/
 	$('.tab_box').on('click', '.menu a', function(e){
 		var $parent = $(this).parent();
 		var _index = $parent.index();
 		var $cont = $('.section').find('.tab_cont > div').eq(_index);
 		e.preventDefault();
-
 		$parent.add($cont).addClass('active').siblings().removeClass('active');
-		$('.menu li.active').prev().addClass('no');
 	}).find('.menu a').eq(0).trigger('click');
+	var n= (new Date()).getMonth();
+	$('.tab_box.month').on('click', '.menu a', function(e){
+		var $parent = $(this).parent();
+		var _index = $parent.index();
+		var $cont = $('.section').find('.tab_cont > div').eq(_index);
+		e.preventDefault();
+		$parent.add($cont).addClass('active').siblings().removeClass('active');
+	}).find('.menu a').eq(n).trigger('click');
 	/* [e] 탭메뉴*/
+	
 
 	//mainVisual
     $(".location>li").click(function(){
@@ -211,21 +241,12 @@ $(document).ready(function(){
 		banner_start();//카운트 다시 시작(기억x)
         return false;
     });
-    cnt=0;//호출횟수, 값이 누적되어야하는 변수
-    banner_start();
-	function banner_start(){
-		rolling =setInterval(function (){
-		cnt++;banner_view(cnt%3);},4000);
-		//인덱스 갯수로 기입
 
-	}
 	function banner_view(n){    
 		$(".slideBox>li").eq(n).fadeIn().siblings().hide();
 		$(".location>li").eq(n).addClass("active").siblings().removeClass("active");
 	}
 	var m =$('.main').length;
-
-
 	
 
 	// btn_top

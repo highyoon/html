@@ -164,38 +164,49 @@
 						<table>
 							<caption>신청 인원 입력항목</caption>
 							<colgroup>
-								<col width="60%">
+								<col width="20%">
 								<col width="40%">
+								<col width="20%">
+								<col width="20%">
 							</colgroup>
 							<thead>
-								<th scope="col">구분</th>
+								<th scope="col" colspan="2">구분</th>
+								<th scope="col">금액</th>
 								<th scope="col">신청인원</th>
 							</thead>
 							<tbody>
 								<tr>
+									<td rowspan="3">유료</td>
 									<td class="left">대인(추가인솔)</td>
+									<td><input type="text"></td>
 									<td><input type="text"> 명</td>
 								</tr>
 								<tr>
 									<td class="left">청소년(중/고등)</td>
+									<td><input type="text"></td>
 									<td><input type="text"> 명</td>
 								</tr>
 								<tr>
 									<td class="left">소인(초등)</td>
+									<td><input type="text"></td>
 									<td><input type="text"> 명</td>
 								</tr>
 								<tr>
+									<td rowspan="2" ></td>
 									<td class="left">대인(단체인원 15명부터 10명당 1명 적용)</td>
+									<td><input type="text"></td>
 									<td><input type="text"> 명</td>
 								</tr>
 								<tr>
 									<td class="left">기초생활수급자</td>
+									<td><input type="text"></td>
 									<td><input type="text"> 명</td>
 								</tr>
 							</tbody>
 							<tfoot>
 								<tr>
-									<td></td>
+									<td colspan="2">총금액</td>
+									<td><input type="text"></td>
 									<td>총인원<strong class="total">250</strong>명</td>
 								</tr>
 							</tfoot>
@@ -218,7 +229,7 @@
 							<tbody>
 								<tr class="left">
 									<td>
-										<span class="bullet">조식</span>
+										<span class="bullet num">중식</span>
 										<span class="select_box">
 											<label for="choice_part">밀쿠폰</label>
 											<select id="choice_part" class="select" title="단체선택">
@@ -227,9 +238,10 @@
 												<option value="중등학교">해당없음</option>
 											</select>
 										</span>
+										<input type="text" class="ip_num" /> 명
 									</td>
 									<td>
-										<span class="bullet">중식</span>
+										<span class="bullet num">석식</span>
 										<span class="select_box">
 											<label for="choice_part">밀쿠폰</label>
 											<select id="choice_part" class="select" title="단체선택">
@@ -238,21 +250,11 @@
 												<option value="중등학교">해당없음</option>
 											</select>
 										</span>
+										<input type="text" class="ip_num" /> 명
 									</td>
+									
 								</tr>
-								<tr class="left">
-									<td colspan="2">
-										<span class="bullet">석식</span>
-										<span class="select_box">
-											<label for="choice_part">밀쿠폰</label>
-											<select id="choice_part" class="select" title="단체선택">
-												<option selected="selected">밀쿠폰</option>
-												<option value="초등학교">단체식사</option>
-												<option value="중등학교">해당없음</option>
-											</select>
-										</span>
-									</td>
-								</tr>
+								
 							</tbody>
 						</table>
 						<p class="table_sub"><strong>* 밀쿠폰이란?</strong> 지정 매장 내에서 자유롭게 식사 가능한 상품권 (이용매장: 매직타임, 가든테라스, 한가람, 오리엔탈)<br><strong>* 단체식사란?</strong> 사전 예약한 별도 공간에서 식사 가능한 단체 급식 (방문 3일전 예약확정 필수)</p>
