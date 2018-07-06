@@ -321,6 +321,8 @@ right:10px; background-position:-14px -25px;
 .innder_tab:after {display:block; content:''; clear:both;}
 .double_tab {border:0 none;}
 .double_tab .col_2 a {padding:15px 0;}
+.double_tab .col_3 {width:calc(35% - 2%);}
+.double_tab .col_3 a {padding:15px 0;}
 
 #wrapCont .cont_box .exper_box {}
 #wrapCont .cont_box .exper_choice {padding:15px;}
